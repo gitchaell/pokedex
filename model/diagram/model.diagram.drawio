@@ -1,0 +1,13 @@
+<mxfile host="65bd71144e">
+    <diagram id="7Hwn0E3sPZxxCSHEKXjB" name="Page-1">
+        <mxGraphModel dx="1348" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="classDiagram&#10;&#10;class Data {&#10;  &lt;&lt;interface&gt;&gt;&#10;  string id&#10;  string name&#10;  string specie&#10;  List~Type~ types&#10;  string description&#10;  string weight&#10;  string height&#10;  List~Type~ counters&#10;  List~Movement~ movements&#10;  Stat stat&#10;  Evolution evolution&#10;  List~Media~ animations&#10;  List~Media~ voices&#10;}&#10;&#10;class Type {&#10;  &lt;&lt;enumeration&gt;&gt;&#10;  Normal&#10;  Fire&#10;  Water&#10;  Grass&#10;  Electric&#10;  Ice&#10;  Fighting&#10;  Poison&#10;  Ground&#10;  Flying&#10;  Psychic&#10;  Bug&#10;  Rock&#10;  Ghost&#10;  Dark&#10;  Dragon&#10;  Steel&#10;  Fairy&#10;}&#10;&#10;class Movement {&#10;  &lt;&lt;interface&gt;&gt;&#10;  string name&#10;  number damage&#10;  Type type&#10;}&#10;&#10;class Stat {&#10;  &lt;&lt;interface&gt;&gt;&#10;  number health&#10;  number attack&#10;  number defense&#10;  number resistence&#10;  number speed&#10;}&#10;&#10;class Evolution {&#10;  &lt;&lt;interface&gt;&gt;&#10;  List~string~ from&#10;  List~string~ to&#10;}&#10;&#10;class Media {&#10;  &lt;&lt;interface&gt;&gt;&#10;  string url&#10;  Status status&#10;}&#10;&#10;class Status {&#10;  &lt;&lt;enumeration&gt;&gt;&#10;  Normal&#10;  Attacking&#10;  Roaring&#10;}&#10;&#10;&#10;Data &lt;-- Type&#10;Data o-- Media&#10;Data *-- Stat&#10;Data *-- Movement&#10;Data *-- Evolution&#10;Movement &lt;-- Type&#10;Media &lt;-- Status&#10;" style="shadow=0;dashed=0;align=left;strokeWidth=1;shape=mxgraph.mermaid.abstract.mermaid;labelBackgroundColor=#ffffff;noLabel=1;theme=neutral;sketch=1;rounded=0;arrowMarkerAbsolute=0;flowchart_curve=linear;collapsible=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="60" width="700" height="955" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

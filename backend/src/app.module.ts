@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
-import { AppResolver } from './app.resolver';
+
+import { AppService } from './app.service';
+import { AppController } from './app.controller';
+import { PokemonModule } from './pokemon/pokemon.module';
 
 @Module({
   imports: [
@@ -11,8 +12,9 @@ import { AppResolver } from './app.resolver';
       driver: ApolloDriver,
       autoSchemaFile: true,
     }),
+    PokemonModule,
   ],
   controllers: [AppController],
-  providers: [AppService, AppResolver],
+  providers: [AppService],
 })
 export class AppModule {}

@@ -1,12 +1,12 @@
 import * as functions from 'firebase-functions';
-import { app } from './server';
 import * as express from 'express';
+import { app } from './server';
 
 const server = express();
 
 app(server)
-  .then((appServer) => {
-    appServer.init();
+  .then(nestApp => {
+    nestApp.init();
   })
   .catch();
 

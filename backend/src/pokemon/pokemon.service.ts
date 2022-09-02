@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { CreatePokemonInput } from './dto/create-pokemon.input';
+import { PokemonInput } from './dto/pokemon.input';
 
 @Injectable()
 export class PokemonService {
-  create(createPokemonInput: CreatePokemonInput) {
-    console.log('~ createPokemonInput', createPokemonInput);
+  create(pokemonInput: PokemonInput) {
+    console.log('~ pokemonInput', pokemonInput);
     return 'This action adds a new pokemon';
   }
 

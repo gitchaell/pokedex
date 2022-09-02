@@ -1,7 +1,7 @@
-import { ObjectType, Field, Int } from '@nestjs/graphql';
+import { Field, InputType, Int } from '@nestjs/graphql';
 
-@ObjectType()
-export class PokemonEvolution {
+@InputType()
+export class PokemonEvolutionInput {
   @Field(() => [Int], {
     nullable: true,
     defaultValue: [],

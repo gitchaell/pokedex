@@ -1,9 +1,9 @@
-import { ObjectType, Field } from '@nestjs/graphql';
+import { Field, InputType } from '@nestjs/graphql';
 
 import { PokemonStatus } from '../types/pokemon-status.type';
 
-@ObjectType()
-export class PokemonAsset {
+@InputType()
+export class PokemonAssetInput {
   @Field(() => String, {
     description: 'Asset External URL',
   })

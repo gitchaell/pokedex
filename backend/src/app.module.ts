@@ -1,9 +1,9 @@
-import { Module } from '@nestjs/common';
+import { Logger, Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 
-import { AppService } from './app.service';
 import { AppController } from './app.controller';
+
 import { PokemonModule } from './pokemon/pokemon.module';
 
 @Module({
@@ -15,6 +15,6 @@ import { PokemonModule } from './pokemon/pokemon.module';
     PokemonModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [Logger],
 })
 export class AppModule {}

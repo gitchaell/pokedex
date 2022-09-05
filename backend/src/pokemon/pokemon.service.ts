@@ -1,22 +1,35 @@
 import { Injectable } from '@nestjs/common';
+import { InjectRepository } from 'nestjs-fireorm';
+import { BaseFirestoreRepository } from 'fireorm';
+
 import { PokemonInput } from './dto/pokemon.input';
+import { Pokemon } from './entities/pokemon.entity';
 
 @Injectable()
 export class PokemonService {
+  constructor(
+    @InjectRepository(Pokemon)
+    private pokemonRepository: BaseFirestoreRepository<Pokemon>,
+  ) {}
+
   create(pokemonInput: PokemonInput) {
-    console.log('~ pokemonInput', pokemonInput);
-    return 'This action adds a new pokemon';
+    return this.pokemonRepository.create(pokemonInput);
   }
 
   findAll() {
-    return `This action returns all pokemon`;
+    return this.pokemonRepository.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} pokemon`;
+  findBy({ id, name }: Partial<Pokemon>) {
+    if (id) {
+      return this.pokemonRepository.findById(id);
+    }
+    if (name) {
+      return this.pokemonRepository.whereEqualTo('name', name).findOne();
+    }
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} pokemon`;
+  remove(id: string) {
+    return this.pokemonRepository.delete(id);
   }
 }

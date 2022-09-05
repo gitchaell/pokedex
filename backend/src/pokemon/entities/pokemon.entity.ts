@@ -1,4 +1,5 @@
-import { ObjectType, Field, Int } from '@nestjs/graphql';
+import { Collection } from 'fireorm';
+import { ObjectType, Field } from '@nestjs/graphql';
 
 import { PokemonType } from '../types/pokemon-type.type';
 
@@ -8,12 +9,13 @@ import { PokemonMove } from './pokemon-move.entity';
 import { PokemonPhysic } from './pokemon-physic.entity';
 import { PokemonStat } from './pokemon-stat.entity';
 
+@Collection()
 @ObjectType()
 export class Pokemon {
-  @Field(() => Int, {
-    description: 'Pokemon Identifier. e.g: 1',
+  @Field(() => String, {
+    description: 'Pokemon Pokedex Identifier. e.g: "1"',
   })
-  id: number;
+  id!: string;
 
   @Field(() => String, {
     description: 'Pokemon Name. e.g: Bulbasaur',

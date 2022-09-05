@@ -1,7 +1,8 @@
 import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
-import { PokemonService } from './pokemon.service';
+
 import { Pokemon } from './entities/pokemon.entity';
 import { PokemonInput } from './dto/pokemon.input';
+import { PokemonService } from './pokemon.service';
 
 @Resolver(() => Pokemon)
 export class PokemonResolver {
@@ -12,18 +13,18 @@ export class PokemonResolver {
     return this.pokemonService.create(pokemonInput);
   }
 
-  @Query(() => [Pokemon], { name: 'pokemon' })
-  findAll() {
+  @Query(() => [Pokemon])
+  getPokemons() {
     return this.pokemonService.findAll();
   }
 
-  @Query(() => Pokemon, { name: 'pokemon' })
-  findOne(@Args('id', { type: () => Int }) id: number) {
-    return this.pokemonService.findOne(id);
+  @Query(() => Pokemon)
+  getPokemonBy(@Args('id', { type: () => String }) id: string, @Args('name', { type: () => String }) name: string) {
+    return this.pokemonService.findBy({ id, name });
   }
 
   @Mutation(() => Pokemon)
-  removePokemon(@Args('id', { type: () => Int }) id: number) {
+  removePokemon(@Args('id', { type: () => Int }) id: string) {
     return this.pokemonService.remove(id);
   }
 }

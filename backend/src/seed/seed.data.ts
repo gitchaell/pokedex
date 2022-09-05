@@ -2,7 +2,7 @@ import { Pokemon } from 'src/pokemon/entities/pokemon.entity';
 
 export const pokemons: Pokemon[] = [
   {
-    id: 1,
+    id: '1',
     name: 'Bulbasaur',
     specie: 'Seed',
     types: ['grass', 'poison'],
@@ -22,7 +22,7 @@ export const pokemons: Pokemon[] = [
       { name: 'Power Whip', damage: 90, type: 'grass' },
     ],
     stat: { health: 45, attack: 49, defense: 49, resistence: 65, speed: 45 },
-    evolution: { pre: [], pos: [2] },
+    evolution: { pre: [], pos: ['2'] },
     animations: [
       {
         url: 'https://firebasestorage.googleapis.com/v0/b/pikapi-150.appspot.com/o/animation%2F001-bulbasaur-normal.gif?alt=media&token=5e384679-7ef2-4fda-99c6-f5624a7dda2f',
@@ -45,7 +45,7 @@ export const pokemons: Pokemon[] = [
     ],
   },
   {
-    id: 2,
+    id: '2',
     name: 'Ivysaur',
     specie: 'Seed',
     types: ['grass', 'poison'],
@@ -66,7 +66,7 @@ export const pokemons: Pokemon[] = [
       { name: 'Power Whip', damage: 90, type: 'grass' },
     ],
     stat: { health: 60, attack: 62, defense: 63, resistence: 80, speed: 60 },
-    evolution: { pre: [1], pos: [3] },
+    evolution: { pre: ['1'], pos: ['3'] },
     animations: [
       {
         url: 'https://firebasestorage.googleapis.com/v0/b/pikapi-150.appspot.com/o/animation%2F002-ivysaur-normal.gif?alt=media&token=27dd6e21-6d3b-454c-9ca0-08a6a6b31783',

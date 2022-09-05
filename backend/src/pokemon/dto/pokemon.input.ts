@@ -10,10 +10,10 @@ import { PokemonStatInput } from './pokemon-stat.input';
 
 @InputType()
 export class PokemonInput {
-  @Field(() => Int, {
-    description: 'Pokemon Identifier. e.g: 1',
+  @Field(() => String, {
+    description: 'Pokemon Identifier. e.g: "1"',
   })
-  id: number;
+  id!: string;
 
   @Field(() => String, {
     description: 'Pokemon Name. e.g: Bulbasaur',

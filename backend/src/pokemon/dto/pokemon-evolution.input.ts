@@ -1,18 +1,18 @@
-import { Field, InputType, Int } from '@nestjs/graphql';
+import { Field, InputType } from '@nestjs/graphql';
 
 @InputType()
 export class PokemonEvolutionInput {
-  @Field(() => [Int], {
+  @Field(() => [String], {
     nullable: true,
     defaultValue: [],
     description: 'Pre-evolutions Identifiers',
   })
-  pre?: number[];
+  pre?: string[];
 
-  @Field(() => [Int], {
+  @Field(() => [String], {
     nullable: true,
     defaultValue: [],
     description: 'Evolutions Identifiers',
   })
-  pos?: number[];
+  pos?: string[];
 }

@@ -1,18 +1,18 @@
-import { ObjectType, Field, Int } from '@nestjs/graphql';
+import { ObjectType, Field } from '@nestjs/graphql';
 
 @ObjectType()
 export class PokemonEvolution {
-  @Field(() => [Int], {
+  @Field(() => [String], {
     nullable: true,
     defaultValue: [],
     description: 'Pre-evolutions Identifiers',
   })
-  pre?: number[];
+  pre?: string[];
 
-  @Field(() => [Int], {
+  @Field(() => [String], {
     nullable: true,
     defaultValue: [],
     description: 'Evolutions Identifiers',
   })
-  pos?: number[];
+  pos?: string[];
 }

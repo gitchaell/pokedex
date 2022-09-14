@@ -1,6 +1,6 @@
 import { Field, Int, InputType } from '@nestjs/graphql';
 
-import { PokemonType } from '../types/pokemon-type.type';
+import { PokemonType } from '../enums/pokemon-type.enum';
 
 @InputType()
 export class PokemonMoveInput {
@@ -16,7 +16,7 @@ export class PokemonMoveInput {
   })
   damage?: number;
 
-  @Field(() => String, {
+  @Field(() => PokemonType, {
     description: 'Move Type. e.g: Grass',
   })
   type: PokemonType;

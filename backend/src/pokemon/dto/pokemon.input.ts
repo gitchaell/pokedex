@@ -1,6 +1,6 @@
-import { Field, InputType, Int } from '@nestjs/graphql';
+import { Field, InputType } from '@nestjs/graphql';
 
-import { PokemonType } from '../types/pokemon-type.type';
+import { PokemonType } from '../enums/pokemon-type.enum';
 
 import { PokemonAssetInput } from './pokemon-asset.input';
 import { PokemonEvolutionInput } from './pokemon-evolution.input';
@@ -27,7 +27,7 @@ export class PokemonInput {
   })
   specie: string;
 
-  @Field(() => [String], {
+  @Field(() => [PokemonType], {
     description: 'Pokemon Types. e.g: Grass,Poison',
   })
   types: PokemonType[];
@@ -46,7 +46,7 @@ export class PokemonInput {
   })
   physic: PokemonPhysicInput;
 
-  @Field(() => [String], {
+  @Field(() => [PokemonType], {
     nullable: true,
     defaultValue: [],
     description: 'Pokemon Counters. e.g: Fire,Psychic,Flying,Ice',

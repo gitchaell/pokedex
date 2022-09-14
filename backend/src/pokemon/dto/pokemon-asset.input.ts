@@ -1,6 +1,6 @@
 import { Field, InputType } from '@nestjs/graphql';
 
-import { PokemonStatus } from '../types/pokemon-status.type';
+import { PokemonStatus } from '../enums/pokemon-status.enum';
 
 @InputType()
 export class PokemonAssetInput {
@@ -9,7 +9,7 @@ export class PokemonAssetInput {
   })
   url: string;
 
-  @Field(() => String, {
+  @Field(() => PokemonStatus, {
     nullable: true,
     defaultValue: 'Normal',
     description: 'Pokemon Status. e.g: Normal,Attacking,Roaring',

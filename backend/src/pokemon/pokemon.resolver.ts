@@ -1,30 +1,28 @@
-import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
+import { Resolver, Query, Args } from '@nestjs/graphql';
 
-import { Pokemon } from './entities/pokemon.entity';
-import { PokemonInput } from './dto/pokemon.input';
 import { PokemonService } from './pokemon.service';
 
-@Resolver(() => Pokemon)
+import { PokemonPaginationInput } from './dto/pokemon-pagination.input';
+import { PokemonSearchInput } from './dto/pokemon-search.input';
+import { PokemonResponse } from './dto/pokemon-response.output';
+
+@Resolver(() => PokemonResponse)
 export class PokemonResolver {
   constructor(private readonly pokemonService: PokemonService) {}
 
-  @Mutation(() => Pokemon)
-  createPokemon(@Args('pokemonInput') pokemonInput: PokemonInput) {
-    return this.pokemonService.create(pokemonInput);
+  @Query(() => PokemonResponse)
+  getPokemons(
+    @Args('params', { type: () => PokemonPaginationInput })
+    params: PokemonPaginationInput,
+  ) {
+    return this.pokemonService.findAll(params);
   }
 
-  @Query(() => [Pokemon])
-  getPokemons() {
-    return this.pokemonService.findAll();
-  }
-
-  @Query(() => Pokemon)
-  getPokemonBy(@Args('id', { type: () => String }) id: string, @Args('name', { type: () => String }) name: string) {
-    return this.pokemonService.findBy({ id, name });
-  }
-
-  @Mutation(() => Pokemon)
-  removePokemon(@Args('id', { type: () => Int }) id: string) {
-    return this.pokemonService.remove(id);
+  @Query(() => PokemonResponse)
+  getPokemonBy(
+    @Args('params', { type: () => PokemonSearchInput })
+    params: PokemonSearchInput,
+  ) {
+    return this.pokemonService.findBy(params);
   }
 }

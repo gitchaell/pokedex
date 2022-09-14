@@ -2,8 +2,11 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from 'nestjs-fireorm';
 import { BaseFirestoreRepository } from 'fireorm';
 
-import { PokemonInput } from './dto/pokemon.input';
+import { PokemonSearchInput } from './dto/pokemon-search.input';
+import { PokemonPaginationInput } from './dto/pokemon-pagination.input';
+
 import { Pokemon } from './entities/pokemon.entity';
+import { PokemonResponse } from './dto/pokemon-response.output';
 
 @Injectable()
 export class PokemonService {
@@ -12,24 +15,24 @@ export class PokemonService {
     private pokemonRepository: BaseFirestoreRepository<Pokemon>,
   ) {}
 
-  create(pokemonInput: PokemonInput) {
-    return this.pokemonRepository.create(pokemonInput);
+  async findAll({ limit }: PokemonPaginationInput): Promise<PokemonResponse> {
+    const pokemons = await this.pokemonRepository.orderByAscending('id').limit(limit).find();
+
+    return { pokemons };
   }
 
-  findAll() {
-    return this.pokemonRepository.find();
-  }
+  async findBy({ id, name }: PokemonSearchInput): Promise<PokemonResponse> {
+    let pokemon = null;
 
-  findBy({ id, name }: Partial<Pokemon>) {
     if (id) {
-      return this.pokemonRepository.findById(id);
+      pokemon = await this.pokemonRepository.findById(id);
     }
     if (name) {
-      return this.pokemonRepository.whereEqualTo('name', name).findOne();
+      pokemon = await this.pokemonRepository.whereEqualTo('name', name).findOne();
     }
-  }
 
-  remove(id: string) {
-    return this.pokemonRepository.delete(id);
+    if (!pokemon) return { message: 'Pokemon not found' };
+
+    return { pokemon };
   }
 }

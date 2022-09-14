@@ -1,7 +1,7 @@
 import { Collection } from 'fireorm';
 import { ObjectType, Field } from '@nestjs/graphql';
 
-import { PokemonType } from '../types/pokemon-type.type';
+import { PokemonType } from '../enums/pokemon-type.enum';
 
 import { PokemonAsset } from './pokemon-asset.entity';
 import { PokemonEvolution } from './pokemon-evolution.entity';
@@ -29,7 +29,7 @@ export class Pokemon {
   })
   specie: string;
 
-  @Field(() => [String], {
+  @Field(() => [PokemonType], {
     description: 'Pokemon Types. e.g: Grass,Poison',
   })
   types: PokemonType[];
@@ -48,7 +48,7 @@ export class Pokemon {
   })
   physic: PokemonPhysic;
 
-  @Field(() => [String], {
+  @Field(() => [PokemonType], {
     nullable: true,
     defaultValue: [],
     description: 'Pokemon Counters. e.g: Fire,Psychic,Flying,Ice',

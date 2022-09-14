@@ -8,5 +8,6 @@ import { PokemonService } from './pokemon.service';
 @Module({
   imports: [FireormModule.forFeature([Pokemon])],
   providers: [PokemonResolver, PokemonService],
+  exports: [FireormModule],
 })
 export class PokemonModule {}

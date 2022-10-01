@@ -19,7 +19,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "gcp-build": "npm i npm-install-peers"
   },
   "dependencies": {
     "@nestjs/apollo": "^10.0.22",
@@ -35,8 +36,9 @@
     "graphql": "^16.6.0",
     "graphql-tools": "^8.3.4",
     "nestjs-fireorm": "^1.1.0",
+    "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.5.7"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
@@ -52,7 +54,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "firebase-functions-test": "^2.3.0",
-    "firebase-tools": "^11.13.0",
     "jest": "28.1.2",
     "prettier": "^2.3.2",
     "source-map-support": "^0.5.20",

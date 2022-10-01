@@ -1,5 +1,4 @@
 import { Logger, Module } from '@nestjs/common';
-import { ConfigModule } from '@nestjs/config';
 
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
@@ -12,14 +11,13 @@ import { SeedModule } from './seed/seed.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot(),
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: true,
     }),
     FireormModule.forRoot({
       firestoreSettings: {
-        projectId: process.env.GCLOUD_PROJECT,
+        projectId: 'pikapi-150',
       },
       fireormSettings: {
         validateModels: false, // yarn add class-validator

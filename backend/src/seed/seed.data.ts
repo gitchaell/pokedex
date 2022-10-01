@@ -11,7 +11,7 @@ export const pokemons: Pokemon[] = [
     name: 'Bulbasaur',
     specie: 'Seed',
     types: [PokemonType.grass, PokemonType.poison],
-    description: "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+    description: `Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun\'s rays, the seed grows progressively larger.`,
     physic: {
       weight: 15.2,
       weightUnit: 'kilogram',
@@ -40,8 +40,7 @@ export const pokemons: Pokemon[] = [
     name: 'Ivysaur',
     specie: 'Seed',
     types: [PokemonType.grass, PokemonType.poison],
-    description:
-      "There is a bud on its back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it'll burn up.",
+    description: `There is a bud on its back. To support its weight, Ivysaur\'s legs and trunk grow thick and strong.If it starts spending more time lying in the sunlight, it\'ll burn up.`,
     physic: {
       weight: 13.2,
       weightUnit: 'kilogram',

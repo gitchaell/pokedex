@@ -8,7 +8,7 @@ export class PokemonResolver {
 
 	@Query(() => PokemonResponse)
 	async searchPokemon(@Args("query", { type: () => String }) query: string) {
-		const result = await this.pokemonService.findBy({ query });
+		const result = await this.pokemonService.search(query);
 		return {
 			pokemons: result.items.map((p: any) => ({
 				id: p.id,

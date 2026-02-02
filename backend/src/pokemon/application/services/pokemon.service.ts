@@ -9,9 +9,8 @@ export class PokemonService {
 		return this.repository.findById(id);
 	}
 
-	async findBy(params: any) {
-		// Mock search for now or implement full text search in firestore
-		const result = await this.repository.findById(params.query);
-		return { items: result ? [result] : [] };
+	async search(query: string) {
+		const items = await this.repository.search(query);
+		return { items };
 	}
 }

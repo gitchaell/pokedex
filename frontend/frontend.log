@@ -1,0 +1,109 @@
+
+> frontend@0.0.0 start
+> ng serve --port 4200
+
+Component HMR has been enabled, see https://angular.dev/hmr for more info.
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB |
+main.js             | main          |  51.77 kB |
+styles.css          | styles        |  33.52 kB |
+
+                    | Initial total | 175.50 kB
+
+Application bundle generation complete. [4.803 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTS-998113: RouterLink is not used within the template of PokemonDetailComponent[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/ui/pokemon-detail/pokemon-detail.component.ts:9:25:
+[37m      9 │   imports: [CommonModule, [32mRouterLink[37m],
+        ╵                           [32m~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTypeScript compiler options 'target' and 'useDefineForClassFields' are set to 'ES2022' and 'false' respectively by the Angular CLI.[0m [1m[35m[plugin angular-compiler][0m
+
+    tsconfig.app.json:0:0:
+[37m      0 │ [32m[37m
+        ╵ [32m^[0m
+
+  To control ECMA version and features use the Browserslist configuration. For more information, see [4mhttps://angular.dev/tools/cli/build#configuring-browser-compatibility[0m
+
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 51.81 kB |
+
+Application bundle generation complete. [0.864 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTS-998113: RouterLink is not used within the template of PokemonDetailComponent[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/ui/pokemon-detail/pokemon-detail.component.ts:9:25:
+[37m      9 │   imports: [CommonModule, [32mRouterLink[37m],
+        ╵                           [32m~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB |
+main.js             | main          |  51.81 kB |
+styles.css          | styles        |  33.52 kB |
+
+                    | Initial total | 175.54 kB
+
+Application bundle generation complete. [0.074 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTS-998113: RouterLink is not used within the template of PokemonDetailComponent[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/ui/pokemon-detail/pokemon-detail.component.ts:9:25:
+[37m      9 │   imports: [CommonModule, [32mRouterLink[37m],
+        ╵                           [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names  | Raw size
+styles.css          | styles | 33.58 kB |
+
+Application bundle generation complete. [0.112 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTS-998113: RouterLink is not used within the template of PokemonDetailComponent[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/ui/pokemon-detail/pokemon-detail.component.ts:9:25:
+[37m      9 │   imports: [CommonModule, [32mRouterLink[37m],
+        ╵                           [32m~~~~~~~~~~[0m
+
+
+Stylesheet update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB |
+main.js             | main          |  51.81 kB |
+styles.css          | styles        |  33.58 kB |
+
+                    | Initial total | 175.59 kB
+
+Application bundle generation complete. [0.066 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTS-998113: RouterLink is not used within the template of PokemonDetailComponent[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/ui/pokemon-detail/pokemon-detail.component.ts:9:25:
+[37m      9 │   imports: [CommonModule, [32mRouterLink[37m],
+        ╵                           [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 51.73 kB |
+
+Application bundle generation complete. [0.929 seconds]
+
+Page reload sent to client(s).

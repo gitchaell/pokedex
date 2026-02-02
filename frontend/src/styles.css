@@ -26,21 +26,22 @@
 
 @utility bg-dot-grid {
 	background-image: radial-gradient(
-		rgba(255, 255, 255, 0.2) 1px,
+		rgba(255, 255, 255, 0.15) 1px,
 		transparent 1px
 	);
 	background-size: 24px 24px;
 }
 
 @utility glass-card {
-	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(16px);
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.03);
+	backdrop-filter: blur(20px);
+	border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 body {
 	font-family: "Geist", sans-serif;
-	background-color: #ebf3f9;
+	background-color: #05091b;
+	color: white;
 }
 
 h1,

@@ -1,22 +1,29 @@
 export interface PokemonStats {
-	hp: number;
+	health: number;
 	attack: number;
 	defense: number;
-	specialAttack: number;
-	specialDefense: number;
+	resistance: number;
 	speed: number;
 }
 
 export interface PokemonMove {
 	name: string;
 	type: string;
-	power: number;
-	powerSegments: number;
+	damage: number;
+	power?: number;
+	powerSegments?: number;
 }
 
 export interface PokemonSprites {
 	regular: string;
 	shiny: string;
+}
+
+export interface PokemonPhysic {
+	weight: number;
+	weightUnit: string;
+	height: number;
+	heightUnit: string;
 }
 
 export interface Pokemon {
@@ -27,4 +34,5 @@ export interface Pokemon {
 	stats: PokemonStats;
 	moves: PokemonMove[];
 	sprites: PokemonSprites;
+	physic: PokemonPhysic;
 }

@@ -16,6 +16,43 @@ export class PokemonRepository {
 		private readonly http: HttpService,
 	) {}
 
+	async search(query: string): Promise<Pokemon[]> {
+		const lowerQuery = query.trim().toLowerCase();
+
+		// 1. If empty, return list of 20 (from Firestore or Seed logic check?)
+		if (!lowerQuery) {
+			try {
+				// Return first 20 by number
+				return await this.firestore.orderByAscending("number").limit(20).find();
+			} catch (e) {
+				// If firestore fails (no creds), return what's in memory cache (values)
+				return Array.from(this.memoryCache.values()).slice(0, 20);
+			}
+		}
+
+		// 2. Search in Firestore (Prefix)
+		try {
+			const pokemons = await this.firestore
+				.whereGreaterOrEqualThan("name", lowerQuery)
+				.whereLessThan("name", lowerQuery + "\uf8ff")
+				.limit(20)
+				.find();
+
+			if (pokemons.length > 0) return pokemons;
+		} catch (e) {
+			// Ignore firestore error
+		}
+
+		// 3. Fallback: Check if it's a specific ID or Name that we can fetch from PokeAPI via findById
+		// If the user typed "pikachu" and it wasn't in Firestore, we should fetch it!
+		const exactMatch = await this.findById(lowerQuery);
+		if (exactMatch) {
+			return [exactMatch];
+		}
+
+		return [];
+	}
+
 	async findById(id: string): Promise<Pokemon | null> {
 		const isNumeric = /^\d+$/.test(id);
 		let pokemon: Pokemon | null = null;

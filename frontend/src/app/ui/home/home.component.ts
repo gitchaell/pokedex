@@ -17,10 +17,10 @@ import { PokemonGridComponent } from "../pokemon-grid/pokemon-grid.component";
 	],
 	template: `
     <app-main-layout>
-       <div class="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
+       <div class="flex flex-col lg:flex-row gap-8 items-start">
 
           <!-- Sidebar (Left) - Sticky on Desktop -->
-          <div class="lg:w-[400px] flex-none">
+          <div class="lg:w-[420px] w-full flex-none lg:sticky lg:top-24 z-20">
              <div *ngIf="store.loading() && !store.selectedPokemon()" class="flex justify-center p-10">
                 <div class="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
              </div>
@@ -32,10 +32,10 @@ import { PokemonGridComponent } from "../pokemon-grid/pokemon-grid.component";
           </div>
 
           <!-- Grid (Right) -->
-          <div class="flex-1">
-             <div class="mb-4 flex items-center justify-between">
-                <h2 class="text-2xl font-bold text-slate-800 font-heading">Pokedex</h2>
-                <span class="text-sm text-slate-500 font-mono">{{ store.gridPokemons().length }} Pokemon</span>
+          <div class="flex-1 w-full min-w-0">
+             <div class="mb-6 flex items-end justify-between border-b border-white/5 pb-2">
+                <h2 class="text-3xl font-bold text-white font-heading tracking-tight">Pokedex</h2>
+                <span class="text-sm text-slate-400 font-mono mb-1">{{ store.gridPokemons().length }} Found</span>
              </div>
 
              <app-pokemon-grid
@@ -43,8 +43,8 @@ import { PokemonGridComponent } from "../pokemon-grid/pokemon-grid.component";
                 (select)="onSelect($event)">
              </app-pokemon-grid>
 
-             <div *ngIf="store.gridPokemons().length === 0 && !store.loading()" class="text-center py-20 text-slate-400 font-mono">
-                No Pokemon found for "{{ store.searchQuery() }}"
+             <div *ngIf="store.gridPokemons().length === 0 && !store.loading()" class="text-center py-20 text-slate-500 font-mono text-sm">
+                No Pokemon found. Try searching for something else.
              </div>
           </div>
 
@@ -58,26 +58,21 @@ export class HomeComponent implements OnInit {
 	router = inject(Router);
 
 	constructor() {
-		// Auto-load based on route
+		// Auto-load based on route if present, otherwise default to 1
 		effect(() => {
 			const params = this.route.snapshot.params;
 			if (params["id"]) {
 				this.store.loadPokemon(params["id"]);
-			} else {
-				// Default load Lucario
-				this.store.loadPokemon("448");
 			}
 		});
 	}
 
 	ngOnInit() {
-		// Initial Search (empty to get seed)
-		this.store.search("bulbasaur"); // Hack to trigger initial load, ideally empty string should return all seed
-		// Note: Backend search currently requires a string.
-		// Let's improve backend later to return all if empty.
-		// For now, let's search for "a" to match most names or seed.
-		// Actually, let's trigger a search for 'a' to populate grid.
-		this.store.search("a");
+		// Initial Load: List of first 20 and Select Pokemon #1
+		this.store.search("");
+		if (!this.route.snapshot.params["id"]) {
+			this.store.loadPokemon("1");
+		}
 	}
 
 	onSelect(pokemon: any) {

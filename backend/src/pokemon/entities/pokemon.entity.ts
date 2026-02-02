@@ -1,92 +1,52 @@
 import { Collection } from 'fireorm';
 import { ObjectType, Field } from '@nestjs/graphql';
 
-import { PokemonType } from '../enums/pokemon-type.enum';
+@ObjectType()
+export class PokemonStats {
+    @Field() hp: number;
+    @Field() attack: number;
+    @Field() defense: number;
+    @Field() specialAttack: number;
+    @Field() specialDefense: number;
+    @Field() speed: number;
+}
 
-import { PokemonAsset } from './pokemon-asset.entity';
-import { PokemonEvolution } from './pokemon-evolution.entity';
-import { PokemonMove } from './pokemon-move.entity';
-import { PokemonPhysic } from './pokemon-physic.entity';
-import { PokemonStat } from './pokemon-stat.entity';
+@ObjectType()
+export class PokemonMove {
+    @Field() name: string;
+    @Field() type: string;
+    @Field() power: number;
+    @Field() powerSegments: number;
+}
+
+@ObjectType()
+export class PokemonSprites {
+    @Field() regular: string;
+    @Field() shiny: string;
+    @Field() artwork: string;
+}
 
 @Collection()
 @ObjectType()
 export class Pokemon {
-  @Field(() => String, {
-    description: 'Pokemon Pokedex Identifier. e.g: "1"',
-  })
+  @Field(() => String)
   id!: string;
 
-  @Field(() => String, {
-    description: 'Pokemon Name. e.g: Bulbasaur',
-  })
+  @Field(() => Number)
+  number: number;
+
+  @Field(() => String)
   name: string;
 
-  @Field(() => String, {
-    nullable: true,
-    defaultValue: 'Unknown',
-    description: 'Pokemon Specie. e.g: Seed',
-  })
-  specie: string;
+  @Field(() => [String])
+  types: string[];
 
-  @Field(() => [PokemonType], {
-    description: 'Pokemon Types. e.g: Grass,Poison',
-  })
-  types: PokemonType[];
+  @Field(() => PokemonStats)
+  stats: PokemonStats;
 
-  @Field(() => String, {
-    nullable: true,
-    defaultValue: 'Description not found',
-    description: 'Pokemon Description.',
-  })
-  description: string;
-
-  @Field(() => PokemonPhysic, {
-    nullable: true,
-    defaultValue: new PokemonPhysic(),
-    description: 'Pokemon Physics.',
-  })
-  physic: PokemonPhysic;
-
-  @Field(() => [PokemonType], {
-    nullable: true,
-    defaultValue: [],
-    description: 'Pokemon Counters. e.g: Fire,Psychic,Flying,Ice',
-  })
-  counters: PokemonType[];
-
-  @Field(() => [PokemonMove], {
-    nullable: true,
-    defaultValue: [],
-    description: 'Pokemon Moves',
-  })
+  @Field(() => [PokemonMove])
   moves: PokemonMove[];
 
-  @Field(() => PokemonStat, {
-    nullable: true,
-    defaultValue: new PokemonStat(),
-    description: 'Pokemon Stats',
-  })
-  stat: PokemonStat;
-
-  @Field(() => PokemonEvolution, {
-    nullable: true,
-    defaultValue: new PokemonEvolution(),
-    description: 'Pokemon Evolutions',
-  })
-  evolution: PokemonEvolution;
-
-  @Field(() => [PokemonAsset], {
-    nullable: true,
-    defaultValue: [],
-    description: 'Pokemon Animation Assets References',
-  })
-  animations: PokemonAsset[];
-
-  @Field(() => [PokemonAsset], {
-    nullable: true,
-    defaultValue: [],
-    description: 'Pokemon Voices Assets References',
-  })
-  voices: PokemonAsset[];
+  @Field(() => PokemonSprites)
+  sprites: PokemonSprites;
 }

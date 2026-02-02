@@ -1,49 +1,22 @@
-import { Injectable } from '@nestjs/common';
-import { InjectRepository } from 'nestjs-fireorm';
-import { BaseFirestoreRepository } from 'fireorm';
-
-import { Pokemon } from '../pokemon/entities/pokemon.entity';
-import { PokemonInput } from '../pokemon/dto/pokemon.input';
-
-import { pokemons } from './seed.data';
+import { Injectable, Logger } from '@nestjs/common';
+import { PokemonService } from '../pokemon/application/services/pokemon.service';
 
 @Injectable()
 export class SeedService {
-  constructor(
-    @InjectRepository(Pokemon)
-    private pokemonRepository: BaseFirestoreRepository<Pokemon>,
-  ) {}
+  private readonly logger = new Logger(SeedService.name);
+
+  constructor(private readonly pokemonService: PokemonService) {}
 
   async execute() {
-    await this.removeAll();
-    await this.createAll(pokemons);
+    this.logger.log('Starting seed...');
+    // Seed first 20 pokemon
+    for (let i = 1; i <= 20; i++) {
+        await this.pokemonService.findById(i.toString());
+    }
+    // Also Ensure Lucario (448) and Garchomp (445)
+    await this.pokemonService.findById('448');
+    await this.pokemonService.findById('445');
 
     return 'Seed executed';
-  }
-
-  async createAll(pokemons: PokemonInput[]) {
-    const commitBatchPromises = [];
-
-    pokemons.forEach(pokemon => {
-      const writeBatch = this.pokemonRepository.createBatch();
-      writeBatch.create(pokemon);
-      commitBatchPromises.push(writeBatch.commit());
-    });
-
-    await Promise.all(commitBatchPromises);
-  }
-
-  async removeAll() {
-    const pokemons = await this.pokemonRepository.find();
-
-    const commitBatchPromises = [];
-
-    pokemons.forEach(pokemon => {
-      const writeBatch = this.pokemonRepository.createBatch();
-      writeBatch.delete(pokemon);
-      commitBatchPromises.push(writeBatch.commit());
-    });
-
-    await Promise.all(commitBatchPromises);
   }
 }

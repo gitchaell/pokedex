@@ -1,46 +1,10 @@
 import { Component } from '@angular/core';
-import { Apollo, gql } from 'apollo-angular';
-import { Subscription } from 'rxjs';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  standalone: true,
+  imports: [RouterOutlet],
+  template: '<router-outlet></router-outlet>',
 })
-export class AppComponent {
-
-  pokemons?: any[];
-  loading = true;
-  error: any;
-
-  private querySubscription?: Subscription;
-
-  constructor(private apollo: Apollo) { }
-
-  ngOnInit() {
-
-    this.querySubscription = this.apollo
-      .watchQuery({
-        query: gql`
-          query($param: PokemonPaginationInput!) {
-            getPokemons(params: $param) {
-              pokemons {
-                name
-                description
-              }
-            }
-          }`,
-        variables: {
-          param: { limit: 10 },
-        },
-      })
-      .valueChanges.subscribe((result: any) => {
-        this.pokemons = result?.data?.getPokemons?.pokemons;
-        this.loading = result.loading;
-        this.error = result.error;
-      });
-  }
-
-  ngOnDestroy() {
-    this.querySubscription?.unsubscribe();
-  }
-}
+export class AppComponent {}

@@ -1,9 +1,5 @@
 import { Resolver, Query, Args } from '@nestjs/graphql';
-
-import { PokemonService } from './pokemon.service';
-
-import { PokemonPaginationInput } from './dto/pokemon-pagination.input';
-import { PokemonSearchInput } from './dto/pokemon-search.input';
+import { PokemonService } from './application/services/pokemon.service';
 import { PokemonResponse } from './dto/pokemon-response.output';
 
 @Resolver(() => PokemonResponse)
@@ -11,18 +7,20 @@ export class PokemonResolver {
   constructor(private readonly pokemonService: PokemonService) {}
 
   @Query(() => PokemonResponse)
-  getPokemons(
-    @Args('params', { type: () => PokemonPaginationInput })
-    params: PokemonPaginationInput,
+  async searchPokemon(
+    @Args('query', { type: () => String }) query: string,
   ) {
-    return this.pokemonService.findAll(params);
-  }
-
-  @Query(() => PokemonResponse)
-  getPokemonBy(
-    @Args('params', { type: () => PokemonSearchInput })
-    params: PokemonSearchInput,
-  ) {
-    return this.pokemonService.findBy(params);
+    const result = await this.pokemonService.findBy({ query });
+    return {
+        pokemons: result.items.map((p: any) => ({
+            id: p.id,
+            number: p.number,
+            name: p.name,
+            types: p.types,
+            stats: p.stats,
+            moves: p.moves,
+            sprites: p.sprites
+        }))
+    };
   }
 }

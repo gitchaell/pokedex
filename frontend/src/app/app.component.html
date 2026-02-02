@@ -1,15 +1,2 @@
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
-
-<div *ngIf="loading">
-  Loading...
-</div>
-<div *ngIf="error">
-  Error :(
-</div>
-<div *ngIf="pokemons">
-  <div *ngFor="let pokemon of pokemons">
-    <p>{{ pokemon | json }}</p>
-  </div>
-</div>
+<app-search></app-search>
+<router-outlet></router-outlet>

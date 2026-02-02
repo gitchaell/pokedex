@@ -461,6 +461,11 @@
     "@biomejs/cli-win32-arm64" "2.3.13"
     "@biomejs/cli-win32-x64" "2.3.13"
 
+"@biomejs/cli-linux-x64-musl@2.3.13":
+  version "2.3.13"
+  resolved "https://registry.npmjs.org/@biomejs/cli-linux-x64-musl/-/cli-linux-x64-musl-2.3.13.tgz"
+  integrity sha512-0bdwFVSbbM//Sds6OjtnmQGp4eUjOTt6kHvR/1P0ieR9GcTUAlPNvPC3DiavTqq302W34Ae2T6u5VVNGuQtGlQ==
+
 "@biomejs/cli-linux-x64@2.3.13":
   version "2.3.13"
   resolved "https://registry.npmjs.org/@biomejs/cli-linux-x64/-/cli-linux-x64-2.3.13.tgz"

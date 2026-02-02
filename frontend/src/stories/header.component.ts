@@ -2,8 +2,8 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 import type { User } from "./User";
 
 @Component({
-  selector: "storybook-header",
-  template: `<header>
+	selector: "storybook-header",
+	template: `<header>
     <div class="wrapper">
       <div>
         <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -58,18 +58,18 @@ import type { User } from "./User";
       </div>
     </div>
   </header>`,
-  styleUrls: ["./header.css"],
+	styleUrls: ["./header.css"],
 })
 export default class HeaderComponent {
-  @Input()
-  user: User | null = null;
+	@Input()
+	user: User | null = null;
 
-  @Output()
-  onLogin = new EventEmitter<Event>();
+	@Output()
+	onLogin = new EventEmitter<Event>();
 
-  @Output()
-  onLogout = new EventEmitter<Event>();
+	@Output()
+	onLogout = new EventEmitter<Event>();
 
-  @Output()
-  onCreateAccount = new EventEmitter<Event>();
+	@Output()
+	onCreateAccount = new EventEmitter<Event>();
 }

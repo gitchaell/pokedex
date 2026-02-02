@@ -3,10 +3,10 @@ import { Component, Input } from "@angular/core";
 import type { Pokemon } from "../../core/models/pokemon.model";
 
 @Component({
-  selector: "app-pokemon-detail",
-  standalone: true,
-  imports: [CommonModule],
-  template: `
+	selector: "app-pokemon-detail",
+	standalone: true,
+	imports: [CommonModule],
+	template: `
     <div *ngIf="pokemon"
        class="relative w-full max-w-[400px] md:h-[calc(100vh-140px)] h-auto rounded-[32px] overflow-hidden bg-[#1F2029] shadow-2xl transition-all duration-500 flex flex-col mx-auto md:mx-0 sticky top-24"
        [style]="'--primary-color: var(--color-type-' + pokemon.types[0] + ')'">
@@ -108,11 +108,11 @@ import type { Pokemon } from "../../core/models/pokemon.model";
   `,
 })
 export class PokemonDetailComponent {
-  @Input() pokemon!: Pokemon;
+	@Input() pokemon!: Pokemon;
 
-  getPowerSegments(segments: number): number[] {
-    return Array(10)
-      .fill(0)
-      .map((_, i) => (i < segments ? 1 : 0));
-  }
+	getPowerSegments(segments: number): number[] {
+		return Array(10)
+			.fill(0)
+			.map((_, i) => (i < segments ? 1 : 0));
+	}
 }

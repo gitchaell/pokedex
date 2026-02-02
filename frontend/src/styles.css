@@ -1,4 +1,9 @@
-@import "tailwindcss";
+/* Tailwind v4 — usar sólo directivas en CSS, no requiere tailwind.config.cjs/postcss.config.cjs */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Añade aquí tus estilos globales personalizados */
 
 :root {
   --color-type-normal: #a8a77a;

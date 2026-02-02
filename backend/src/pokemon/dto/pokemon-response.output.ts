@@ -1,6 +1,6 @@
-import { Field, ObjectType } from '@nestjs/graphql';
+import { Field, ObjectType } from "@nestjs/graphql";
 
-import { Pokemon } from '../entities/pokemon.entity';
+import { Pokemon } from "../entities/pokemon.entity";
 
 @ObjectType()
 export class PokemonResponse {

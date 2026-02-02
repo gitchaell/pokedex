@@ -1,15 +1,20 @@
-import { Component, inject, OnInit, effect } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ActivatedRoute, Router } from '@angular/router';
-import { PokemonStore } from '../../core/store/pokemon.store';
-import { MainLayoutComponent } from '../layout/main-layout.component';
-import { PokemonDetailComponent } from '../pokemon-detail/pokemon-detail.component';
-import { PokemonGridComponent } from '../pokemon-grid/pokemon-grid.component';
+import { CommonModule } from "@angular/common";
+import { Component, effect, inject, type OnInit } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
+import { PokemonStore } from "../../core/store/pokemon.store";
+import { MainLayoutComponent } from "../layout/main-layout.component";
+import { PokemonDetailComponent } from "../pokemon-detail/pokemon-detail.component";
+import { PokemonGridComponent } from "../pokemon-grid/pokemon-grid.component";
 
 @Component({
-  selector: 'app-home',
+  selector: "app-home",
   standalone: true,
-  imports: [CommonModule, MainLayoutComponent, PokemonDetailComponent, PokemonGridComponent],
+  imports: [
+    CommonModule,
+    MainLayoutComponent,
+    PokemonDetailComponent,
+    PokemonGridComponent,
+  ],
   template: `
     <app-main-layout>
        <div class="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
@@ -45,7 +50,7 @@ import { PokemonGridComponent } from '../pokemon-grid/pokemon-grid.component';
 
        </div>
     </app-main-layout>
-  `
+  `,
 })
 export class HomeComponent implements OnInit {
   store = inject(PokemonStore);
@@ -53,30 +58,30 @@ export class HomeComponent implements OnInit {
   router = inject(Router);
 
   constructor() {
-      // Auto-load based on route
-      effect(() => {
-          const params = this.route.snapshot.params;
-          if (params['id']) {
-             this.store.loadPokemon(params['id']);
-          } else {
-             // Default load Lucario
-             this.store.loadPokemon('448');
-          }
-      });
+    // Auto-load based on route
+    effect(() => {
+      const params = this.route.snapshot.params;
+      if (params["id"]) {
+        this.store.loadPokemon(params["id"]);
+      } else {
+        // Default load Lucario
+        this.store.loadPokemon("448");
+      }
+    });
   }
 
   ngOnInit() {
-      // Initial Search (empty to get seed)
-      this.store.search('bulbasaur'); // Hack to trigger initial load, ideally empty string should return all seed
-      // Note: Backend search currently requires a string.
-      // Let's improve backend later to return all if empty.
-      // For now, let's search for "a" to match most names or seed.
-      // Actually, let's trigger a search for 'a' to populate grid.
-      this.store.search('a');
+    // Initial Search (empty to get seed)
+    this.store.search("bulbasaur"); // Hack to trigger initial load, ideally empty string should return all seed
+    // Note: Backend search currently requires a string.
+    // Let's improve backend later to return all if empty.
+    // For now, let's search for "a" to match most names or seed.
+    // Actually, let's trigger a search for 'a' to populate grid.
+    this.store.search("a");
   }
 
   onSelect(pokemon: any) {
-      this.store.selectPokemon(pokemon);
-      this.router.navigate(['/pokemon', pokemon.id]);
+    this.store.selectPokemon(pokemon);
+    this.router.navigate(["/pokemon", pokemon.id]);
   }
 }

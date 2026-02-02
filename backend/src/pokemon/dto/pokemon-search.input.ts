@@ -1,4 +1,4 @@
-import { Field, InputType } from '@nestjs/graphql';
+import { Field, InputType } from "@nestjs/graphql";
 
 @InputType()
 export class PokemonSearchInput {
@@ -9,7 +9,7 @@ export class PokemonSearchInput {
   id?: string;
 
   @Field(() => String, {
-    description: 'Pokemon Name. e.g: Bulbasaur',
+    description: "Pokemon Name. e.g: Bulbasaur",
     nullable: true,
   })
   name?: string;

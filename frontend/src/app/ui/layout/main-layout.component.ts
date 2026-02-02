@@ -1,9 +1,9 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { PokemonStore } from '../../core/store/pokemon.store';
+import { CommonModule } from "@angular/common";
+import { Component, inject } from "@angular/core";
+import { PokemonStore } from "../../core/store/pokemon.store";
 
 @Component({
-  selector: 'app-main-layout',
+  selector: "app-main-layout",
   standalone: true,
   imports: [CommonModule],
   template: `
@@ -32,12 +32,12 @@ import { PokemonStore } from '../../core/store/pokemon.store';
          <ng-content></ng-content>
       </main>
     </div>
-  `
+  `,
 })
 export class MainLayoutComponent {
   store = inject(PokemonStore);
 
   onSearch(term: string) {
-      this.store.search(term);
+    this.store.search(term);
   }
 }

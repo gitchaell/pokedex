@@ -1,12 +1,12 @@
-import { moduleMetadata } from '@storybook/angular';
-import { CommonModule } from '@angular/common';
-import type { Story, Meta } from '@storybook/angular';
+import { CommonModule } from "@angular/common";
+import type { Meta, Story } from "@storybook/angular";
+import { moduleMetadata } from "@storybook/angular";
 
-import Button from './button.component';
-import Header from './header.component';
+import Button from "./button.component";
+import Header from "./header.component";
 
 export default {
-  title: 'Example/Header',
+  title: "Example/Header",
   component: Header,
   decorators: [
     moduleMetadata({
@@ -16,7 +16,7 @@ export default {
   ],
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/angular/configure/story-layout
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
 } as Meta;
 
@@ -27,7 +27,7 @@ const Template: Story<Header> = (args: Header) => ({
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
   user: {
-    name: 'Jane Doe',
+    name: "Jane Doe",
   },
 };
 

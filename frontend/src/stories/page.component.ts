@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { User } from './User';
+import { Component } from "@angular/core";
+import type { User } from "./User";
 
 @Component({
-  selector: 'storybook-page',
+  selector: "storybook-page",
   template: `<article>
     <storybook-header
       [user]="user"
@@ -58,7 +58,7 @@ import { User } from './User';
       </div>
     </section>
   </article>`,
-  styleUrls: ['./page.css'],
+  styleUrls: ["./page.css"],
 })
 export default class PageComponent {
   user: User | null = null;
@@ -68,10 +68,10 @@ export default class PageComponent {
   }
 
   doLogin() {
-    this.user = { name: 'Jane Doe' };
+    this.user = { name: "Jane Doe" };
   }
 
   doCreateAccount() {
-    this.user = { name: 'Jane Doe' };
+    this.user = { name: "Jane Doe" };
   }
 }

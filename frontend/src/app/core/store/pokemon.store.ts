@@ -47,10 +47,14 @@ export const PokemonStore = signalStore(
 				next: (pokemons) =>
 					patchState(store, { gridPokemons: pokemons, loading: false }),
 				error: (err: any) =>
+<<<<<<< HEAD
 					patchState(store, {
 						error: err?.message ?? String(err),
 						loading: false,
 					}),
+=======
+					patchState(store, { error: err?.message ?? String(err), loading: false }),
+>>>>>>> 7d9d213 (refactor: standardize code formatting and improve readability across the application)
 			});
 
 		return {
@@ -61,10 +65,14 @@ export const PokemonStore = signalStore(
 					next: (pokemon) =>
 						patchState(store, { selectedPokemon: pokemon, loading: false }),
 					error: (err: any) =>
+<<<<<<< HEAD
 						patchState(store, {
 							error: err?.message ?? String(err),
 							loading: false,
 						}),
+=======
+						patchState(store, { error: err?.message ?? String(err), loading: false }),
+>>>>>>> 7d9d213 (refactor: standardize code formatting and improve readability across the application)
 				});
 			},
 

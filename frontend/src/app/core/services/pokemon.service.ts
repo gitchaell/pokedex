@@ -7,22 +7,22 @@ import type { Pokemon } from "../models/pokemon.model";
 
 @Injectable({ providedIn: "root" })
 export class PokemonService {
-	private http = inject(HttpClient);
-	private apollo = inject(Apollo);
+  private http = inject(HttpClient);
+  private apollo = inject(Apollo);
 
-	getPokemon(id: string): Observable<Pokemon> {
-		// REST for detailed view
-		// Assuming backend endpoint is http://localhost:3000/pokemon/:id
-		// But environment.endpoint is graphql. We need a REST base url.
-		// For now deriving it.
-		const baseUrl = environment.endpoint.replace("/graphql", "");
-		return this.http.get<Pokemon>(`${baseUrl}/pokemon/${id}`);
-	}
+  getPokemon(id: string): Observable<Pokemon> {
+    // REST for detailed view
+    // Assuming backend endpoint is http://localhost:3000/pokemon/:id
+    // But environment.endpoint is graphql. We need a REST base url.
+    // For now deriving it.
+    const baseUrl = environment.endpoint.replace("/graphql", "");
+    return this.http.get<Pokemon>(`${baseUrl}/pokemon/${id}`);
+  }
 
-	searchPokemons(query: string): Observable<Pokemon[]> {
-		return this.apollo
-			.query<any>({
-				query: gql`
+  searchPokemons(query: string): Observable<Pokemon[]> {
+    return this.apollo
+      .query<any>({
+        query: gql`
         query Search($q: String!) {
           searchPokemon(query: $q) {
             pokemons {
@@ -38,8 +38,8 @@ export class PokemonService {
           }
         }
       `,
-				variables: { q: query },
-			})
-			.pipe(map((result) => result.data?.searchPokemon?.pokemons || []));
-	}
+        variables: { q: query },
+      })
+      .pipe(map((result) => result.data?.searchPokemon?.pokemons || []));
+  }
 }

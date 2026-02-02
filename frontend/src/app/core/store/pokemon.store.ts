@@ -1,6 +1,12 @@
 import { inject } from "@angular/core";
 import { patchState, signalStore, withMethods, withState } from "@ngrx/signals";
-import { Subject, debounceTime, distinctUntilChanged, switchMap, tap } from "rxjs";
+import {
+	Subject,
+	debounceTime,
+	distinctUntilChanged,
+	switchMap,
+	tap,
+} from "rxjs";
 import type { Pokemon } from "../models/pokemon.model";
 import { PokemonService } from "../services/pokemon.service";
 
@@ -41,7 +47,10 @@ export const PokemonStore = signalStore(
 				next: (pokemons) =>
 					patchState(store, { gridPokemons: pokemons, loading: false }),
 				error: (err: any) =>
-					patchState(store, { error: err?.message ?? String(err), loading: false }),
+					patchState(store, {
+						error: err?.message ?? String(err),
+						loading: false,
+					}),
 			});
 
 		return {
@@ -52,7 +61,10 @@ export const PokemonStore = signalStore(
 					next: (pokemon) =>
 						patchState(store, { selectedPokemon: pokemon, loading: false }),
 					error: (err: any) =>
-						patchState(store, { error: err?.message ?? String(err), loading: false }),
+						patchState(store, {
+							error: err?.message ?? String(err),
+							loading: false,
+						}),
 				});
 			},
 

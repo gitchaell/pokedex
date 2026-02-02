@@ -6,45 +6,45 @@
 /* Añade aquí tus estilos globales personalizados */
 
 :root {
-  --color-type-normal: #a8a77a;
-  --color-type-fire: #ee8130;
-  --color-type-water: #6390f0;
-  --color-type-electric: #f7d02c;
-  --color-type-grass: #7ac74c;
-  --color-type-ice: #96d9d6;
-  --color-type-fighting: #c22e28;
-  --color-type-poison: #a33ea1;
-  --color-type-ground: #e2bf65;
-  --color-type-flying: #a98ff3;
-  --color-type-psychic: #f95587;
-  --color-type-bug: #a6b91a;
-  --color-type-rock: #b6a136;
-  --color-type-ghost: #735797;
-  --color-type-dragon: #6f35fc;
-  --color-type-dark: #705746;
-  --color-type-steel: #b7b7ce;
-  --color-type-fairy: #d685ad;
+	--color-type-normal: #a8a77a;
+	--color-type-fire: #ee8130;
+	--color-type-water: #6390f0;
+	--color-type-electric: #f7d02c;
+	--color-type-grass: #7ac74c;
+	--color-type-ice: #96d9d6;
+	--color-type-fighting: #c22e28;
+	--color-type-poison: #a33ea1;
+	--color-type-ground: #e2bf65;
+	--color-type-flying: #a98ff3;
+	--color-type-psychic: #f95587;
+	--color-type-bug: #a6b91a;
+	--color-type-rock: #b6a136;
+	--color-type-ghost: #735797;
+	--color-type-dragon: #6f35fc;
+	--color-type-dark: #705746;
+	--color-type-steel: #b7b7ce;
+	--color-type-fairy: #d685ad;
 
-  --color-lucario-dark: #1f2029;
+	--color-lucario-dark: #1f2029;
 }
 
 @utility bg-dot-grid {
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.2) 1px,
-    transparent 1px
-  );
-  background-size: 24px 24px;
+	background-image: radial-gradient(
+		rgba(255, 255, 255, 0.2) 1px,
+		transparent 1px
+	);
+	background-size: 24px 24px;
 }
 
 @utility glass-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(16px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 body {
-  font-family: "Geist", sans-serif;
-  background-color: #ebf3f9;
+	font-family: "Geist", sans-serif;
+	background-color: #ebf3f9;
 }
 
 h1,
@@ -54,9 +54,9 @@ h4,
 h5,
 h6,
 .font-heading {
-  font-family: "Geist", sans-serif;
+	font-family: "Geist", sans-serif;
 }
 
 .font-mono {
-  font-family: "Geist Mono", monospace;
+	font-family: "Geist Mono", monospace;
 }

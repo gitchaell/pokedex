@@ -8,9 +8,9 @@ import { PokemonController } from "./interfaces/http/pokemon.controller";
 import { PokemonRepository } from "./infrastructure/repositories/pokemon.repository";
 
 @Module({
-	imports: [FireormModule.forFeature([Pokemon]), HttpModule],
-	controllers: [PokemonController],
-	providers: [PokemonResolver, PokemonService, PokemonRepository],
-	exports: [PokemonService, FireormModule],
+  imports: [FireormModule.forFeature([Pokemon]), HttpModule],
+  controllers: [PokemonController],
+  providers: [PokemonResolver, PokemonService, PokemonRepository],
+  exports: [PokemonService, FireormModule],
 })
 export class PokemonModule {}

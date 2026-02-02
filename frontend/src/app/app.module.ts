@@ -11,22 +11,22 @@ import { PokemonCardComponent } from "./components/pokemon-card/pokemon-card.com
 import { SearchComponent } from "./components/search/search.component";
 
 @NgModule({
-	declarations: [AppComponent, PokemonCardComponent, SearchComponent],
-	imports: [BrowserModule, AppRoutingModule, ApolloModule, HttpClientModule],
-	providers: [
-		{
-			provide: APOLLO_OPTIONS,
-			useFactory: (httpLink: HttpLink) => {
-				return {
-					cache: new InMemoryCache(),
-					link: httpLink.create({
-						uri: environment.endpoint,
-					}),
-				};
-			},
-			deps: [HttpLink],
-		},
-	],
-	bootstrap: [AppComponent],
+  declarations: [AppComponent, PokemonCardComponent, SearchComponent],
+  imports: [BrowserModule, AppRoutingModule, ApolloModule, HttpClientModule],
+  providers: [
+    {
+      provide: APOLLO_OPTIONS,
+      useFactory: (httpLink: HttpLink) => {
+        return {
+          cache: new InMemoryCache(),
+          link: httpLink.create({
+            uri: environment.endpoint,
+          }),
+        };
+      },
+      deps: [HttpLink],
+    },
+  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -3,10 +3,10 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 import type { Pokemon } from "../../core/models/pokemon.model";
 
 @Component({
-	selector: "app-pokemon-grid",
-	standalone: true,
-	imports: [CommonModule],
-	template: `
+  selector: "app-pokemon-grid",
+  standalone: true,
+  imports: [CommonModule],
+  template: `
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
       <div *ngFor="let p of pokemons"
            (click)="select.emit(p)"
@@ -37,6 +37,6 @@ import type { Pokemon } from "../../core/models/pokemon.model";
   `,
 })
 export class PokemonGridComponent {
-	@Input() pokemons: Pokemon[] = [];
-	@Output() select = new EventEmitter<Pokemon>();
+  @Input() pokemons: Pokemon[] = [];
+  @Output() select = new EventEmitter<Pokemon>();
 }

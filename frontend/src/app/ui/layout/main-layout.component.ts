@@ -3,10 +3,10 @@ import { Component, inject } from "@angular/core";
 import { PokemonStore } from "../../core/store/pokemon.store";
 
 @Component({
-	selector: "app-main-layout",
-	standalone: true,
-	imports: [CommonModule],
-	template: `
+  selector: "app-main-layout",
+  standalone: true,
+  imports: [CommonModule],
+  template: `
     <div class="min-h-screen bg-[#EBF3F9] font-sans">
       <!-- Header -->
       <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-white/20 shadow-sm px-6 py-4 flex items-center justify-between">
@@ -35,9 +35,9 @@ import { PokemonStore } from "../../core/store/pokemon.store";
   `,
 })
 export class MainLayoutComponent {
-	store = inject(PokemonStore);
+  store = inject(PokemonStore);
 
-	onSearch(term: string) {
-		this.store.search(term);
-	}
+  onSearch(term: string) {
+    this.store.search(term);
+  }
 }

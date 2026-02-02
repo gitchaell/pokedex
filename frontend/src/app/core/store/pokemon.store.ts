@@ -48,13 +48,19 @@ export const PokemonStore = signalStore(
 					patchState(store, { gridPokemons: pokemons, loading: false }),
 				error: (err: any) =>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6b9c6e4 (Fix Tailwind v4 configuration and configure Biome)
 					patchState(store, {
 						error: err?.message ?? String(err),
 						loading: false,
 					}),
+<<<<<<< HEAD
 =======
 					patchState(store, { error: err?.message ?? String(err), loading: false }),
 >>>>>>> 7d9d213 (refactor: standardize code formatting and improve readability across the application)
+=======
+>>>>>>> 6b9c6e4 (Fix Tailwind v4 configuration and configure Biome)
 			});
 
 		return {
@@ -66,13 +72,19 @@ export const PokemonStore = signalStore(
 						patchState(store, { selectedPokemon: pokemon, loading: false }),
 					error: (err: any) =>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6b9c6e4 (Fix Tailwind v4 configuration and configure Biome)
 						patchState(store, {
 							error: err?.message ?? String(err),
 							loading: false,
 						}),
+<<<<<<< HEAD
 =======
 						patchState(store, { error: err?.message ?? String(err), loading: false }),
 >>>>>>> 7d9d213 (refactor: standardize code formatting and improve readability across the application)
+=======
+>>>>>>> 6b9c6e4 (Fix Tailwind v4 configuration and configure Biome)
 				});
 			},
 

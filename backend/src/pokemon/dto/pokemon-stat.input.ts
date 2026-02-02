@@ -1,39 +1,39 @@
-import { Field, Int, InputType } from '@nestjs/graphql';
+import { Field, Int, InputType } from "@nestjs/graphql";
 
 @InputType()
 export class PokemonStatInput {
   @Field(() => Int, {
     nullable: true,
     defaultValue: 0,
-    description: 'Health Stat',
+    description: "Health Stat",
   })
   health?: number;
 
   @Field(() => Int, {
     nullable: true,
     defaultValue: 0,
-    description: 'Sttack Stat',
+    description: "Sttack Stat",
   })
   attack?: number;
 
   @Field(() => Int, {
     nullable: true,
     defaultValue: 0,
-    description: 'Defense Stat',
+    description: "Defense Stat",
   })
   defense?: number;
 
   @Field(() => Int, {
     nullable: true,
     defaultValue: 0,
-    description: 'Resistence Stat',
+    description: "Resistence Stat",
   })
   resistence: number;
 
   @Field(() => Int, {
     nullable: true,
     defaultValue: 0,
-    description: 'Speed Stat',
+    description: "Speed Stat",
   })
   speed?: number;
 }

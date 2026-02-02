@@ -1,9 +1,9 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Pokemon } from '../../core/models/pokemon.model';
+import { CommonModule } from "@angular/common";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
+import type { Pokemon } from "../../core/models/pokemon.model";
 
 @Component({
-  selector: 'app-pokemon-grid',
+  selector: "app-pokemon-grid",
   standalone: true,
   imports: [CommonModule],
   template: `
@@ -34,7 +34,7 @@ import { Pokemon } from '../../core/models/pokemon.model';
            </div>
       </div>
     </div>
-  `
+  `,
 })
 export class PokemonGridComponent {
   @Input() pokemons: Pokemon[] = [];

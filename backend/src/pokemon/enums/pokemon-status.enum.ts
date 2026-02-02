@@ -1,12 +1,12 @@
-import { registerEnumType } from '@nestjs/graphql';
+import { registerEnumType } from "@nestjs/graphql";
 
 export enum PokemonStatus {
-  normal = 'normal',
-  attacking = 'attacking',
-  roaring = 'roaring',
+  normal = "normal",
+  attacking = "attacking",
+  roaring = "roaring",
 }
 
 registerEnumType(PokemonStatus, {
-  name: 'PokemonStatus',
-  description: 'Status of Pokemon animations and voices.',
+  name: "PokemonStatus",
+  description: "Status of Pokemon animations and voices.",
 });

@@ -1,11 +1,11 @@
-import * as functions from 'firebase-functions';
-import * as express from 'express';
-import { app } from './server';
+import * as functions from "firebase-functions";
+import * as express from "express";
+import { app } from "./server";
 
 const server = express();
 
 app(server)
-  .then(nestApp => {
+  .then((nestApp) => {
     nestApp.init();
   })
   .catch();

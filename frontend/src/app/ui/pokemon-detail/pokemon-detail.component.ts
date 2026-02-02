@@ -1,9 +1,9 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Pokemon } from '../../core/models/pokemon.model';
+import { CommonModule } from "@angular/common";
+import { Component, Input } from "@angular/core";
+import type { Pokemon } from "../../core/models/pokemon.model";
 
 @Component({
-  selector: 'app-pokemon-detail',
+  selector: "app-pokemon-detail",
   standalone: true,
   imports: [CommonModule],
   template: `
@@ -105,12 +105,14 @@ import { Pokemon } from '../../core/models/pokemon.model';
 
         </div>
     </div>
-  `
+  `,
 })
 export class PokemonDetailComponent {
   @Input() pokemon!: Pokemon;
 
   getPowerSegments(segments: number): number[] {
-    return Array(10).fill(0).map((_, i) => i < segments ? 1 : 0);
+    return Array(10)
+      .fill(0)
+      .map((_, i) => (i < segments ? 1 : 0));
   }
 }

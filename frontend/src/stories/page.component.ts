@@ -2,8 +2,8 @@ import { Component } from "@angular/core";
 import type { User } from "./User";
 
 @Component({
-  selector: "storybook-page",
-  template: `<article>
+	selector: "storybook-page",
+	template: `<article>
     <storybook-header
       [user]="user"
       (onLogout)="doLogout()"
@@ -58,20 +58,20 @@ import type { User } from "./User";
       </div>
     </section>
   </article>`,
-  styleUrls: ["./page.css"],
+	styleUrls: ["./page.css"],
 })
 export default class PageComponent {
-  user: User | null = null;
+	user: User | null = null;
 
-  doLogout() {
-    this.user = null;
-  }
+	doLogout() {
+		this.user = null;
+	}
 
-  doLogin() {
-    this.user = { name: "Jane Doe" };
-  }
+	doLogin() {
+		this.user = { name: "Jane Doe" };
+	}
 
-  doCreateAccount() {
-    this.user = { name: "Jane Doe" };
-  }
+	doCreateAccount() {
+		this.user = { name: "Jane Doe" };
+	}
 }

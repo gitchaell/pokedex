@@ -6,8 +6,8 @@ import { SeedService } from "./seed.service";
 import { SeedController } from "./seed.controller";
 
 @Module({
-  controllers: [SeedController],
-  imports: [PokemonModule],
-  providers: [SeedService],
+	controllers: [SeedController],
+	imports: [PokemonModule],
+	providers: [SeedService],
 })
 export class SeedModule {}

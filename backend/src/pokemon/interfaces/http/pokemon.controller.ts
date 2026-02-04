@@ -1,4 +1,10 @@
-import { Controller, Get, Param, NotFoundException, Query } from "@nestjs/common";
+import {
+	Controller,
+	Get,
+	Param,
+	NotFoundException,
+	Query,
+} from "@nestjs/common";
 import { PokemonService } from "../../application/services/pokemon.service";
 
 @Controller("pokemon")

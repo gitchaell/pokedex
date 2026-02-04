@@ -8,11 +8,11 @@ import type { Pokemon } from "../../core/models/pokemon.model";
 	imports: [CommonModule],
 	template: `
     <div *ngIf="pokemon"
-       class="relative w-full max-w-[420px] mx-auto rounded-[32px] overflow-hidden bg-[#1F2029] shadow-2xl flex flex-col font-sans border border-white/5 transition-all duration-500">
+       class="relative w-full max-w-105 mx-auto rounded-4xl overflow-hidden bg-[#1F2029] shadow-2xl flex flex-col font-sans border border-white/5 transition-all duration-500">
 
         <!-- Background Elements -->
         <div class="absolute inset-0 bg-dot-grid opacity-30 pointer-events-none"></div>
-        <div class="absolute top-[10%] left-1/2 -translate-x-1/2 w-[300px] h-[300px] rounded-full blur-[80px] opacity-30 bg-[var(--primary-color)] pointer-events-none mix-blend-screen"
+        <div class="absolute top-[10%] left-1/2 -translate-x-1/2 w-75 h-75 rounded-full blur-[80px] opacity-30 bg-[(--primary-color)] pointer-events-none mix-blend-screen"
              [style]="'--primary-color: var(--color-type-' + pokemon.types[0] + ')'"></div>
 
         <!-- Header -->
@@ -32,7 +32,7 @@ import type { Pokemon } from "../../core/models/pokemon.model";
         </div>
 
         <!-- Image -->
-        <div class="relative z-20 h-[260px] flex items-center justify-center -mt-2 group">
+        <div class="relative z-20 h-65 flex items-center justify-center -mt-2 group">
              <img [src]="pokemon.sprites.regular"
                   [alt]="pokemon.name"
                   class="h-full w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform transition-transform duration-500 group-hover:scale-110 will-change-transform" />
@@ -73,10 +73,10 @@ import type { Pokemon } from "../../core/models/pokemon.model";
 
                       <div class="flex items-center gap-3">
                            <!-- Power Bars -->
-                           <div class="flex gap-[2px]">
+                           <div class="flex gap-0.5">
                                 <div *ngFor="let bar of [1,2,3,4,5]; let i = index"
                                      class="w-3 h-1.5 rounded-sm"
-                                     [ngClass]="i < (move.powerSegments || 0) ? 'bg-[var(--primary-color)]' : 'bg-white/10'"
+                                     [ngClass]="i < (move.powerSegments || 0) ? 'bg-[(--primary-color)]' : 'bg-white/10'"
                                      [style]="i < (move.powerSegments || 0) ? '--primary-color: var(--color-type-' + move.type + ')' : ''">
                                 </div>
                            </div>

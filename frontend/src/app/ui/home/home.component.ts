@@ -20,7 +20,7 @@ import { PokemonGridComponent } from "../pokemon-grid/pokemon-grid.component";
        <div class="flex flex-col lg:flex-row gap-8 items-start">
 
           <!-- Sidebar (Left) - Sticky on Desktop -->
-          <div class="lg:w-[420px] w-full flex-none lg:sticky lg:top-24 z-20">
+          <div class="lg:w-105 w-full flex-none lg:sticky lg:top-24 z-20">
              <div *ngIf="store.loading() && !store.selectedPokemon()" class="flex justify-center p-10">
                 <div class="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
              </div>

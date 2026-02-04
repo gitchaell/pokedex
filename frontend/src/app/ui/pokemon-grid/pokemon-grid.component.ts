@@ -14,7 +14,7 @@ import type { Pokemon } from "../../core/models/pokemon.model";
            [style]="'--card-glow: var(--color-type-' + p.types[0] + ')'">
 
            <!-- BG Glow -->
-           <div class="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300 bg-gradient-to-br from-[var(--card-glow)] to-transparent pointer-events-none"></div>
+           <div class="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300 bg-linear-to-br from-[(--card-glow)] to-transparent pointer-events-none"></div>
 
            <div class="flex justify-between items-start mb-2 relative z-10">
               <span class="text-xs font-bold font-mono text-white/40">#{{ p.number }}</span>
@@ -26,7 +26,7 @@ import type { Pokemon } from "../../core/models/pokemon.model";
                    class="w-24 h-24 object-contain mb-2 drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
                    loading="lazy" />
 
-              <h3 class="font-bold text-white uppercase text-sm tracking-tight font-heading group-hover:text-[var(--card-glow)] transition-colors">{{ p.name }}</h3>
+              <h3 class="font-bold text-white uppercase text-sm tracking-tight font-heading group-hover:text-[(--card-glow)] transition-colors">{{ p.name }}</h3>
 
               <div class="flex gap-1 mt-2">
                  <div *ngFor="let type of p.types"

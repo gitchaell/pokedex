@@ -7,11 +7,9 @@ import { HttpLink } from "apollo-angular/http";
 import { environment } from "src/environments/environment";
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
-import { PokemonCardComponent } from "./components/pokemon-card/pokemon-card.component";
-import { SearchComponent } from "./components/search/search.component";
 
 @NgModule({
-	declarations: [AppComponent, PokemonCardComponent, SearchComponent],
+	declarations: [AppComponent],
 	imports: [BrowserModule, AppRoutingModule, ApolloModule, HttpClientModule],
 	providers: [
 		{

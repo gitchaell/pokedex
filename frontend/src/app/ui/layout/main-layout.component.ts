@@ -10,10 +10,10 @@ import { PokemonStore } from "../../core/store/pokemon.store";
     <div class="min-h-screen bg-[#05091B] text-white bg-dot-grid relative overflow-hidden font-sans">
 
       <!-- Gradient Orb for atmosphere -->
-      <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="fixed top-0 left-1/2 -translate-x-1/2 w-200 h-200 bg-blue-900/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <!-- Header -->
-      <header class="relative z-50 px-6 py-5 flex items-center justify-between max-w-[1600px] mx-auto">
+      <header class="relative z-50 px-6 py-5 flex items-center justify-between max-w-400 mx-auto">
         <div class="flex items-center gap-4">
            <img src="assets/pokelogo.svg" alt="App Logo" class="h-10 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
            <img src="assets/poketitle.svg" alt="Pokedex" class="h-6 w-auto hidden sm:block opacity-90" />
@@ -34,7 +34,7 @@ import { PokemonStore } from "../../core/store/pokemon.store";
       </header>
 
       <!-- Content -->
-      <main class="relative z-10 p-6 pt-2 max-w-[1600px] mx-auto">
+      <main class="relative z-10 p-6 pt-2 max-w-400 mx-auto">
          <ng-content></ng-content>
       </main>
     </div>

@@ -1,99 +1,70 @@
-# Pokedex Web App
+# Pokedex - Clean Architecture & GraphQL
 
-...
+A modern Pokedex application built with Angular 19+ (Signals) and NestJS (DDD + GraphQL).
 
-## Challenge
+## Features
 
-...
+- **Frontend**: Angular 19, Tailwind CSS v4, Signals Store (NgRx), Glassmorphism UI.
+- **Backend**: NestJS, GraphQL, In-Memory Database (Seeded from PokeAPI), Domain-Driven Design.
+- **Design**: Lucario Dark Theme, Geist Typography, Responsive & Animated.
 
-## Solution
+## Tech Stack
 
-...
+- **Frontend**:
+  - Angular 19
+  - Tailwind CSS v4 (@tailwindcss/postcss)
+  - Apollo Angular (GraphQL)
+  - NgRx Signals
+  - Biome (Linting/Formatting)
 
-## Entities Model Diagram
+- **Backend**:
+  - NestJS
+  - GraphQL (Apollo Driver)
+  - In-Memory Repository
+  - Seeding Service (Axios)
 
-```mermaid
-classDiagram
+## Setup & Run
 
-class Data {
-  <<interface>>
-  string id
-  string name
-  string specie
-  List~Type~ types
-  string description
-  string weight
-  string height
-  List~Type~ counters
-  List~Movement~ movements
-  Stat stat
-  Evolution evolution
-  List~Media~ animations
-  List~Media~ voices
-}
+### Prerequisites
+- Node.js v16+ (Project config, though v18+ recommended)
+- npm
 
-class Type {
-  <<enumeration>>
-  Normal
-  Fire
-  Water
-  Grass
-  Electric
-  Ice
-  Fighting
-  Poison
-  Ground
-  Flying
-  Psychic
-  Bug
-  Rock
-  Ghost
-  Dark
-  Dragon
-  Steel
-  Fairy
-}
+### Installation
 
-class Movement {
-  <<interface>>
-  string name
-  number damage
-  Type type
-}
+1. Install dependencies for both projects:
+   ```bash
+   npm install
+   cd backend && npm install
+   cd frontend && npm install
+   ```
 
-class Stat {
-  <<interface>>
-  number health
-  number attack
-  number defense
-  number resistence
-  number speed
-}
+### Running the App
 
-class Evolution {
-  <<interface>>
-  List~string~ from
-  List~string~ to
-}
+1. **Backend**:
+   ```bash
+   cd backend
+   npm start
+   ```
+   Server runs on `http://localhost:3000`. GraphQL Playground at `http://localhost:3000/graphql`.
+   *Note: On startup, the backend will fetch 150 Pokemon from PokeAPI. This might take a few seconds.*
 
-class Media {
-  <<interface>>
-  string url
-  Status status
-}
+2. **Frontend**:
+   ```bash
+   cd frontend
+   npm start
+   ```
+   App runs on `http://localhost:4200`.
 
-class Status {
-  <<enumeration>>
-  Normal
-  Attacking
-  Roaring
-}
+## Architecture Highlights
 
-Data <-- Type
-Data o-- Media
-Data *-- Stat
-Data *-- Movement
-Data *-- Evolution
-Movement <-- Type
-Media <-- Status
-```
+- **GraphQL First**: All data fetching is done via GraphQL queries.
+- **In-Memory Storage**: Removed Firestore dependency. Data is seeded on startup and held in memory.
+- **Zero Any**: Strict TypeScript typing across the stack.
+- **Component Design**: Dumb UI components (Inputs/Outputs) + Smart Container/Layout components.
+- **Search**: Advanced search with Name, Type, and Limit filters.
+
+## Visuals
+
+- **Glassmorphism**: Extensive use of backdrop-blur and transparency.
+- **Typography**: Geist Sans for UI, Geist Mono for stats/numbers.
+- **Animations**: Staggered fade-ins for grid items.

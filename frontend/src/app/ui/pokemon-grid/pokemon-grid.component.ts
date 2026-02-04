@@ -6,38 +6,7 @@ import type { Pokemon } from "../../core/models/pokemon.model";
 	selector: "app-pokemon-grid",
 	standalone: true,
 	imports: [CommonModule],
-	template: `
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-      <div *ngFor="let p of pokemons"
-           (click)="select.emit(p)"
-           class="group relative rounded-2xl p-4 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-white/5 bg-[#1F2029]"
-           [style]="'--card-glow: var(--color-type-' + p.types[0] + ')'">
-
-           <!-- BG Glow -->
-           <div class="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300 bg-linear-to-br from-[(--card-glow)] to-transparent pointer-events-none"></div>
-
-           <div class="flex justify-between items-start mb-2 relative z-10">
-              <span class="text-xs font-bold font-mono text-white/40">#{{ p.number }}</span>
-           </div>
-
-           <div class="flex flex-col items-center relative z-10">
-              <img [src]="p.sprites.regular"
-                   [alt]="p.name"
-                   class="w-24 h-24 object-contain mb-2 drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
-                   loading="lazy" />
-
-              <h3 class="font-bold text-white uppercase text-sm tracking-tight font-heading group-hover:text-[(--card-glow)] transition-colors">{{ p.name }}</h3>
-
-              <div class="flex gap-1 mt-2">
-                 <div *ngFor="let type of p.types"
-                      class="px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider text-white/90 bg-white/10 backdrop-blur-md border border-white/5 font-mono">
-                    {{ type }}
-                 </div>
-              </div>
-           </div>
-      </div>
-    </div>
-  `,
+	templateUrl: "./pokemon-grid.component.html",
 })
 export class PokemonGridComponent {
 	@Input() pokemons: Pokemon[] = [];

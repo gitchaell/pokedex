@@ -21,7 +21,7 @@
 	--color-type-steel: #b7b7ce;
 	--color-type-fairy: #d685ad;
 
-	--color-lucario-dark: #1f2029;
+	--color-surface-dark: #1f2029;
 }
 
 @utility bg-dot-grid {
@@ -33,15 +33,17 @@
 }
 
 @utility glass-card {
-	background: rgba(255, 255, 255, 0.03);
-	backdrop-filter: blur(20px);
+	background: rgba(255, 255, 255, 0.02);
+	backdrop-filter: blur(40px);
 	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
 }
 
 body {
 	font-family: "Geist", sans-serif;
 	background-color: #05091b;
 	color: white;
+	font-feature-settings: "ss01";
 }
 
 h1,
@@ -56,4 +58,20 @@ h6,
 
 .font-mono {
 	font-family: "Geist Mono", monospace;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-in {
+	animation: fadeInUp 0.5s ease-out forwards;
+	opacity: 0; /* Start hidden */
 }

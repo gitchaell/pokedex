@@ -1,24 +1,26 @@
-import { Resolver, Query, Args } from "@nestjs/graphql";
+import { Resolver, Query, Args, Int } from "@nestjs/graphql";
 import { PokemonService } from "./application/services/pokemon.service";
 import { PokemonResponse } from "./dto/pokemon-response.output";
+import { Pokemon } from "./entities/pokemon.entity";
 
-@Resolver(() => PokemonResponse)
+@Resolver(() => Pokemon)
 export class PokemonResolver {
 	constructor(private readonly pokemonService: PokemonService) {}
 
 	@Query(() => PokemonResponse)
-	async searchPokemon(@Args("query", { type: () => String }) query: string) {
-		const result = await this.pokemonService.search(query);
+	async searchPokemon(
+        @Args("query", { type: () => String, nullable: true }) query: string = "",
+        @Args("type", { type: () => String, nullable: true }) type: string = "",
+        @Args("limit", { type: () => Int, nullable: true }) limit: number = 20
+    ) {
+		const result = await this.pokemonService.search(query, type, limit);
 		return {
-			pokemons: result.items.map((p: any) => ({
-				id: p.id,
-				number: p.number,
-				name: p.name,
-				types: p.types,
-				stats: p.stats,
-				moves: p.moves,
-				sprites: p.sprites,
-			})),
+			pokemons: result.items,
 		};
 	}
+
+    @Query(() => Pokemon, { nullable: true })
+    async getPokemon(@Args("id", { type: () => String }) id: string) {
+        return this.pokemonService.findById(id);
+    }
 }

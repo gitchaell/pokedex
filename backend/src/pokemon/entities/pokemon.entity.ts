@@ -1,4 +1,3 @@
-import { Collection } from "fireorm";
 import { ObjectType, Field } from "@nestjs/graphql";
 
 @ObjectType()
@@ -51,7 +50,6 @@ export class PokemonVoice {
 	@Field() status: string;
 }
 
-@Collection()
 @ObjectType()
 export class Pokemon {
 	@Field(() => String)

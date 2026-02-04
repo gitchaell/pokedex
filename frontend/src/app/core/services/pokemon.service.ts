@@ -1,45 +1,87 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable, inject } from "@angular/core";
 import { Apollo, gql } from "apollo-angular";
 import { map, type Observable } from "rxjs";
-import { environment } from "../../../environments/environment";
 import type { Pokemon } from "../models/pokemon.model";
+
+const GET_POKEMON_QUERY = gql`
+  query GetPokemon($id: String!) {
+    getPokemon(id: $id) {
+      id
+      number
+      name
+      types
+      specie
+      description
+      physic {
+        weight
+        height
+      }
+      stats {
+        health
+        attack
+        defense
+        resistance
+        speed
+      }
+      moves {
+        name
+        type
+        damage
+        power
+        powerSegments
+      }
+      sprites {
+        regular
+        shiny
+      }
+    }
+  }
+`;
+
+const SEARCH_POKEMON_QUERY = gql`
+  query Search($query: String, $type: String, $limit: Int) {
+    searchPokemon(query: $query, type: $type, limit: $limit) {
+      pokemons {
+        id
+        number
+        name
+        types
+        sprites {
+          regular
+          shiny
+        }
+      }
+    }
+  }
+`;
 
 @Injectable({ providedIn: "root" })
 export class PokemonService {
-	private http = inject(HttpClient);
 	private apollo = inject(Apollo);
 
 	getPokemon(id: string): Observable<Pokemon> {
-		// REST for detailed view
-		// Assuming backend endpoint is http://localhost:3000/pokemon/:id
-		// But environment.endpoint is graphql. We need a REST base url.
-		// For now deriving it.
-		const baseUrl = environment.endpoint.replace("/graphql", "");
-		return this.http.get<Pokemon>(`${baseUrl}/pokemon/${id}`);
+		return this.apollo
+			.watchQuery<{ getPokemon: Pokemon }>({
+				query: GET_POKEMON_QUERY,
+				variables: { id },
+				fetchPolicy: "cache-first",
+			})
+			.valueChanges.pipe(map((result) => result.data.getPokemon));
 	}
 
-	searchPokemons(query: string): Observable<Pokemon[]> {
+	searchPokemons(
+		query: string,
+		type?: string,
+		limit: number = 20,
+	): Observable<Pokemon[]> {
 		return this.apollo
-			.query<any>({
-				query: gql`
-        query Search($q: String!) {
-          searchPokemon(query: $q) {
-            pokemons {
-              id
-              number
-              name
-              types
-              sprites {
-                  regular
-                  shiny
-              }
-            }
-          }
-        }
-      `,
-				variables: { q: query },
+			.watchQuery<{ searchPokemon: { pokemons: Pokemon[] } }>({
+				query: SEARCH_POKEMON_QUERY,
+				variables: { query, type, limit },
+				fetchPolicy: "cache-and-network",
 			})
-			.pipe(map((result) => result.data?.searchPokemon?.pokemons || []));
+			.valueChanges.pipe(
+				map((result) => result.data?.searchPokemon?.pokemons || []),
+			);
 	}
 }

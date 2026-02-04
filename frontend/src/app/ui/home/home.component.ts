@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { Component, effect, inject, type OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
+import type { Pokemon } from "../../core/models/pokemon.model";
 import { PokemonStore } from "../../core/store/pokemon.store";
 import { MainLayoutComponent } from "../layout/main-layout.component";
 import { PokemonDetailComponent } from "../pokemon-detail/pokemon-detail.component";
@@ -75,7 +76,7 @@ export class HomeComponent implements OnInit {
 		}
 	}
 
-	onSelect(pokemon: any) {
+	onSelect(pokemon: Pokemon) {
 		this.store.selectPokemon(pokemon);
 		this.router.navigate(["/pokemon", pokemon.id]);
 	}

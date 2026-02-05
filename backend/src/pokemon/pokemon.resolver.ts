@@ -12,8 +12,9 @@ export class PokemonResolver {
 		@Args("query", { type: () => String, nullable: true }) query: string = "",
 		@Args("type", { type: () => String, nullable: true }) type: string = "",
 		@Args("limit", { type: () => Int, nullable: true }) limit: number = 20,
+		@Args("offset", { type: () => Int, nullable: true }) offset: number = 0,
 	) {
-		const result = await this.pokemonService.search(query, type, limit);
+		const result = await this.pokemonService.search(query, type, limit, offset);
 		return {
 			pokemons: result.items,
 		};

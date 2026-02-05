@@ -2,11 +2,11 @@ import { Logger } from "@nestjs/common";
 import { app } from "./server";
 
 (async () => {
-	const port = 3000;
+	const port = parseInt(process.env.PORT || "3000", 10);
 	const server = await app();
 	await server.listen(port, () => {
 		Logger.log(
-			`Nest aplication running in http://localhost:${port}/graphql`,
+			`Nest application running in http://localhost:${port}/graphql`,
 			"NestApplication",
 		);
 	});

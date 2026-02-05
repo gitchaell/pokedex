@@ -9,18 +9,18 @@ export class PokemonResolver {
 
 	@Query(() => PokemonResponse)
 	async searchPokemon(
-        @Args("query", { type: () => String, nullable: true }) query: string = "",
-        @Args("type", { type: () => String, nullable: true }) type: string = "",
-        @Args("limit", { type: () => Int, nullable: true }) limit: number = 20
-    ) {
+		@Args("query", { type: () => String, nullable: true }) query: string = "",
+		@Args("type", { type: () => String, nullable: true }) type: string = "",
+		@Args("limit", { type: () => Int, nullable: true }) limit: number = 20,
+	) {
 		const result = await this.pokemonService.search(query, type, limit);
 		return {
 			pokemons: result.items,
 		};
 	}
 
-    @Query(() => Pokemon, { nullable: true })
-    async getPokemon(@Args("id", { type: () => String }) id: string) {
-        return this.pokemonService.findById(id);
-    }
+	@Query(() => Pokemon, { nullable: true })
+	async getPokemon(@Args("id", { type: () => String }) id: string) {
+		return this.pokemonService.findById(id);
+	}
 }

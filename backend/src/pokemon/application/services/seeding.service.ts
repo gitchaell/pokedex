@@ -1,81 +1,35 @@
-import { Injectable, OnModuleInit, Logger } from '@nestjs/common';
-import axios from 'axios';
-import { InMemoryPokemonRepository } from '../../infrastructure/in-memory-pokemon.repository';
-import { Pokemon } from '../../entities/pokemon.entity';
+import { Injectable, OnModuleInit, Logger } from "@nestjs/common";
+import * as path from "path";
+import * as fs from "fs";
+import { InMemoryPokemonRepository } from "../../infrastructure/in-memory-pokemon.repository";
+import { Pokemon } from "../../entities/pokemon.entity";
 
 @Injectable()
 export class SeedingService implements OnModuleInit {
-  private readonly logger = new Logger(SeedingService.name);
+	private readonly logger = new Logger(SeedingService.name);
 
-  constructor(private readonly repository: InMemoryPokemonRepository) {}
+	constructor(private readonly repository: InMemoryPokemonRepository) {}
 
-  async onModuleInit() {
-    this.logger.log('Seeding Pokemons from PokeAPI...');
-    try {
-      // Fetch 150
-      const { data } = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=150');
-      const pokemons: Pokemon[] = [];
-      const promises = data.results.map(async (result: any) => {
-          try {
-            const { data: details } = await axios.get(result.url);
-            const id = details.id.toString();
+	async onModuleInit() {
+		this.logger.log("Loading Pokemons from static seed file...");
+		try {
+			const seedPath = path.join(
+				__dirname,
+				"../../infrastructure/seed-data.json",
+			);
 
-            // Basic move mapping (without extra fetch)
-            const moves = details.moves.slice(0, 4).map((m: any) => ({
-                name: m.move.name,
-                type: 'normal', // Default since we don't fetch move details
-                damage: 0,
-                power: 0,
-                powerSegments: 0
-            }));
+			if (!fs.existsSync(seedPath)) {
+				this.logger.error(`Seed file not found at ${seedPath}`);
+				return;
+			}
 
-            const pokemon: Pokemon = {
-                id: id,
-                number: details.id,
-                name: details.name,
-                types: details.types.map((t: any) => t.type.name),
-                sprites: {
-                    regular: `https://shinyhunters.com/images/regular/${id}.gif`,
-                    shiny: `https://shinyhunters.com/images/shiny/${id}.gif`
-                },
-                stats: {
-                    health: details.stats.find((s: any) => s.stat.name === 'hp')?.base_stat || 0,
-                    attack: details.stats.find((s: any) => s.stat.name === 'attack')?.base_stat || 0,
-                    defense: details.stats.find((s: any) => s.stat.name === 'defense')?.base_stat || 0,
-                    resistance: details.stats.find((s: any) => s.stat.name === 'special-defense')?.base_stat || 0,
-                    speed: details.stats.find((s: any) => s.stat.name === 'speed')?.base_stat || 0,
-                },
-                physic: {
-                    weight: details.weight / 10,
-                    weightUnit: 'kg',
-                    height: details.height / 10,
-                    heightUnit: 'm'
-                },
-                moves: moves,
-                evolution: { pre: [], pos: [] },
-                voices: [],
-                animations: [],
-                specie: 'Unknown',
-                description: '',
-                counters: []
-            };
-            return pokemon;
-          } catch (e) {
-              this.logger.error(`Error fetching details for ${result.name}`);
-              return null;
-          }
-      });
+			const rawData = fs.readFileSync(seedPath, "utf-8");
+			const pokemons: Pokemon[] = JSON.parse(rawData);
 
-      const results = await Promise.all(promises);
-      const validPokemons = results.filter((p): p is Pokemon => p !== null);
-
-      // Sort by number
-      validPokemons.sort((a, b) => (a.number || 0) - (b.number || 0));
-
-      await this.repository.saveAll(validPokemons);
-      this.logger.log(`Seeded ${validPokemons.length} pokemons.`);
-    } catch (error) {
-      this.logger.error('Failed to seed pokemons', error);
-    }
-  }
+			await this.repository.saveAll(pokemons);
+			this.logger.log(`Loaded ${pokemons.length} pokemons from file.`);
+		} catch (error) {
+			this.logger.error("Failed to load seed data", error);
+		}
+	}
 }

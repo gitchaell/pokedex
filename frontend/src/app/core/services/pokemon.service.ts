@@ -72,7 +72,7 @@ export class PokemonService {
 	searchPokemons(
 		query: string,
 		type?: string,
-		limit: number = 20,
+		limit: number = 12,
 	): Observable<Pokemon[]> {
 		return this.apollo
 			.watchQuery<{ searchPokemon: { pokemons: Pokemon[] } }>({

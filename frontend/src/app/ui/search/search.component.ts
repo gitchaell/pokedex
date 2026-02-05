@@ -19,7 +19,7 @@ export class SearchComponent {
 
   query = signal('');
   type = signal('');
-  limit = signal(20);
+  limit = signal(12);
 
   types = [
     'normal', 'fire', 'water', 'electric', 'grass', 'ice',

@@ -27,7 +27,7 @@ const initialState: PokemonState = {
 	error: null,
 	searchQuery: "",
     searchType: "",
-    searchLimit: 20
+    searchLimit: 12
 };
 
 export const PokemonStore = signalStore(
@@ -74,7 +74,7 @@ export const PokemonStore = signalStore(
 				});
 			},
 
-			search(query: string, type: string = "", limit: number = 20) {
+			search(query: string, type: string = "", limit: number = 12) {
 				searchSubject.next({ query, type, limit });
 			},
 

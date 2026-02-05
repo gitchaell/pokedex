@@ -1,9 +1,16 @@
 import { Injectable } from "@nestjs/common";
 import { Pokemon } from "../entities/pokemon.entity";
+import data from "./seed-data.json";
 
 @Injectable()
 export class InMemoryPokemonRepository {
 	private pokemons: Pokemon[] = [];
+
+	constructor() {
+		if (Array.isArray(data) && data.length) {
+			this.pokemons = data as unknown as Pokemon[];
+		}
+	}
 
 	async saveAll(pokemons: Pokemon[]): Promise<void> {
 		this.pokemons = pokemons;
@@ -25,7 +32,7 @@ export class InMemoryPokemonRepository {
 	async search(
 		query: string,
 		type?: string,
-		limit: number = 20,
+		limit: number = 12,
 	): Promise<Pokemon[]> {
 		let result = this.pokemons;
 

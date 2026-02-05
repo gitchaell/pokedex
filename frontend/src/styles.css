@@ -2,48 +2,48 @@
 @source "./**/*.{html,ts}";
 
 :root {
-  --color-type-normal: #a8a77a;
-  --color-type-fire: #ee8130;
-  --color-type-water: #6390f0;
-  --color-type-electric: #f7d02c;
-  --color-type-grass: #7ac74c;
-  --color-type-ice: #96d9d6;
-  --color-type-fighting: #c22e28;
-  --color-type-poison: #a33ea1;
-  --color-type-ground: #e2bf65;
-  --color-type-flying: #a98ff3;
-  --color-type-psychic: #f95587;
-  --color-type-bug: #a6b91a;
-  --color-type-rock: #b6a136;
-  --color-type-ghost: #735797;
-  --color-type-dragon: #6f35fc;
-  --color-type-dark: #705746;
-  --color-type-steel: #b7b7ce;
-  --color-type-fairy: #d685ad;
+	--color-type-normal: #a8a77a;
+	--color-type-fire: #ee8130;
+	--color-type-water: #6390f0;
+	--color-type-electric: #f7d02c;
+	--color-type-grass: #7ac74c;
+	--color-type-ice: #96d9d6;
+	--color-type-fighting: #c22e28;
+	--color-type-poison: #a33ea1;
+	--color-type-ground: #e2bf65;
+	--color-type-flying: #a98ff3;
+	--color-type-psychic: #f95587;
+	--color-type-bug: #a6b91a;
+	--color-type-rock: #b6a136;
+	--color-type-ghost: #735797;
+	--color-type-dragon: #6f35fc;
+	--color-type-dark: #705746;
+	--color-type-steel: #b7b7ce;
+	--color-type-fairy: #d685ad;
 
-  --color-surface-dark: #1f2029;
+	--color-surface-dark: #1f2029;
 }
 
 @utility bg-dot-grid {
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.1) 2px,
-    transparent 2px
-  );
-  background-size: 24px 24px;
+	background-image: radial-gradient(
+		rgba(255, 255, 255, 0.1) 2px,
+		transparent 2px
+	);
+	background-size: 24px 24px;
 }
 
 @utility glass-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(40px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(40px);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
 }
 
 body {
-  font-family: "Geist", sans-serif;
-  background-color: #05091b;
-  color: white;
-  font-feature-settings: "ss01";
+	font-family: "Geist", sans-serif;
+	background-color: #05091b;
+	color: white;
+	font-feature-settings: "ss01";
 }
 
 h1,
@@ -53,25 +53,25 @@ h4,
 h5,
 h6,
 .font-heading {
-  font-family: "Geist", sans-serif;
+	font-family: "Geist", sans-serif;
 }
 
 .font-mono {
-  font-family: "Geist Mono", monospace;
+	font-family: "Geist Mono", monospace;
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .animate-fade-in {
-  animation: fadeInUp 0.5s ease-out forwards;
-  opacity: 0; /* Start hidden */
+	animation: fadeInUp 0.5s ease-out forwards;
+	opacity: 0; /* Start hidden */
 }

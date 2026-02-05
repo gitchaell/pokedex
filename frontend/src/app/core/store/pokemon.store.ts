@@ -16,8 +16,8 @@ type PokemonState = {
 	loading: boolean;
 	error: string | null;
 	searchQuery: string;
-    searchType: string;
-    searchLimit: number;
+	searchType: string;
+	searchLimit: number;
 };
 
 const initialState: PokemonState = {
@@ -26,15 +26,19 @@ const initialState: PokemonState = {
 	loading: false,
 	error: null,
 	searchQuery: "",
-    searchType: "",
-    searchLimit: 12
+	searchType: "",
+	searchLimit: 12,
 };
 
 export const PokemonStore = signalStore(
 	{ providedIn: "root" },
 	withState(initialState),
 	withMethods((store, service = inject(PokemonService)) => {
-		const searchSubject = new Subject<{ query: string, type: string, limit: number }>();
+		const searchSubject = new Subject<{
+			query: string;
+			type: string;
+			limit: number;
+		}>();
 
 		searchSubject
 			.pipe(
@@ -42,13 +46,15 @@ export const PokemonStore = signalStore(
 				distinctUntilChanged((p, c) => JSON.stringify(p) === JSON.stringify(c)),
 				tap((params) =>
 					patchState(store, {
-                        searchQuery: params.query,
-                        searchType: params.type,
-                        searchLimit: params.limit,
-                        loading: true
-                    }),
+						searchQuery: params.query,
+						searchType: params.type,
+						searchLimit: params.limit,
+						loading: true,
+					}),
 				),
-				switchMap((params) => service.searchPokemons(params.query, params.type, params.limit)),
+				switchMap((params) =>
+					service.searchPokemons(params.query, params.type, params.limit),
+				),
 			)
 			.subscribe({
 				next: (pokemons) =>

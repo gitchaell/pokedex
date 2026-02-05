@@ -26,11 +26,13 @@
 
     <div class="flex flex-col items-center relative z-10">
       <img
-        [ngSrc]="p.sprites.regular"
-        [alt]="p.name"
+        #imgEl
+        class="poke-img w-24 h-24 object-contain mb-2 drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+        [attr.alt]="p.name"
         width="96"
         height="96"
-        class="w-24 h-24 object-contain mb-2 drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+        [ngSrc]="visible[i] ? p.sprites.regular : placeholder"
+        loading="lazy"
       />
 
       <h3

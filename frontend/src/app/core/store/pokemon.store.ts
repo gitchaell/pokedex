@@ -18,7 +18,6 @@ type PokemonState = {
 	searchQuery: string;
 	searchType: string;
 	searchLimit: number;
-	page: number;
 };
 
 const initialState: PokemonState = {
@@ -29,7 +28,6 @@ const initialState: PokemonState = {
 	searchQuery: "",
 	searchType: "",
 	searchLimit: 12,
-	page: 1,
 };
 
 export const PokemonStore = signalStore(
@@ -40,7 +38,6 @@ export const PokemonStore = signalStore(
 			query: string;
 			type: string;
 			limit: number;
-			page: number;
 		}>();
 
 		searchSubject
@@ -54,17 +51,11 @@ export const PokemonStore = signalStore(
 						searchQuery: params.query,
 						searchType: params.type,
 						searchLimit: params.limit,
-						page: params.page,
 						loading: true,
 					}),
 				),
 				switchMap((params) =>
-					service.searchPokemons(
-						params.query,
-						params.type,
-						params.limit,
-						(params.page - 1) * params.limit,
-					),
+					service.searchPokemons(params.query, params.type, params.limit),
 				),
 			)
 			.subscribe({

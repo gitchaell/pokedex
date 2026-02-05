@@ -1,16 +1,19 @@
 import { Module } from "@nestjs/common";
-import { FireormModule } from "nestjs-fireorm";
 import { HttpModule } from "@nestjs/axios";
-import { Pokemon } from "./entities/pokemon.entity";
 import { PokemonResolver } from "./pokemon.resolver";
 import { PokemonService } from "./application/services/pokemon.service";
-import { PokemonController } from "./interfaces/http/pokemon.controller";
-import { PokemonRepository } from "./infrastructure/repositories/pokemon.repository";
+import { InMemoryPokemonRepository } from "./infrastructure/in-memory-pokemon.repository";
+import { SeedingService } from "./application/services/seeding.service";
 
 @Module({
-	imports: [FireormModule.forFeature([Pokemon]), HttpModule],
-	controllers: [PokemonController],
-	providers: [PokemonResolver, PokemonService, PokemonRepository],
-	exports: [PokemonService, FireormModule],
+	imports: [HttpModule],
+	controllers: [],
+	providers: [
+        PokemonResolver,
+        PokemonService,
+        InMemoryPokemonRepository,
+        SeedingService
+    ],
+	exports: [PokemonService],
 })
 export class PokemonModule {}

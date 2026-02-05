@@ -8,13 +8,13 @@
 
   <!-- Header -->
   <header
-    class="relative z-50 px-6 py-5 flex items-center justify-between max-w-400 mx-auto"
+    class="relative z-50 px-4 py-4 sm:px-6 sm:py-5 flex items-center justify-between max-w-400 mx-auto"
   >
-    <div class="flex items-center gap-4">
+    <div class="flex items-center gap-2 sm:gap-4">
       <img
         src="assets/pokelogo.svg"
         alt="App Logo"
-        class="h-14 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]"
+        class="h-10 sm:h-14 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]"
       />
       <img
         src="assets/poketitle.svg"
@@ -23,11 +23,11 @@
       />
     </div>
 
-    <div class="relative w-full max-w-lg mx-4">
+    <div class="relative w-full max-w-lg mx-2 sm:mx-4">
       <app-search (search)="onSearch($event)"></app-search>
     </div>
 
-    <div class="w-10"></div>
+    <div class="w-10 hidden sm:block"></div>
     <!-- Spacer -->
   </header>
 

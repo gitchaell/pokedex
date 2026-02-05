@@ -7,13 +7,14 @@
     class="absolute inset-0 bg-dot-grid opacity-30 pointer-events-none"
   ></div>
   <div
-    class="absolute top-[10%] left-1/2 -translate-x-1/2 w-75 h-75 rounded-full blur-[80px] opacity-30 bg-[(--primary-color)] pointer-events-none mix-blend-screen"
-    [style]="'--primary-color: var(--color-type-' + pokemon.types[0] + ')'"
+    class="absolute top-[10%] left-1/2 -translate-x-1/2 w-75 h-75 rounded-full blur-[80px] opacity-40 pointer-events-none mix-blend-screen"
+    [style.background-color]="'var(--color-type-' + pokemon.types[0] + ')'"
   ></div>
 
   <!-- Header -->
   <div class="relative z-10 flex items-center justify-between px-6 pt-6 mb-4">
     <button
+      (click)="prev.emit()"
       class="w-10 h-10 flex items-center justify-center rounded-xl bg-white/10 border border-white/10 text-white/70 hover:bg-white/10 transition-colors cursor-pointer"
     >
       <svg
@@ -32,15 +33,17 @@
     </button>
 
     <div
-      class="flex items-center gap-3 bg-white/10 border border-white/10 rounded-xl px-5 py-2 backdrop-blur-md shadow-lg"
+      class="flex items-center gap-3 bg-white/10 border border-white/10 rounded-xl px-5 py-2 backdrop-blur-md shadow-lg max-w-[200px] sm:max-w-none"
     >
-      <img src="assets/pokeball.svg" class="w-5 h-5 opacity-80" />
-      <span class="text-white font-mono font-bold text-lg tracking-tight"
+      <img src="assets/pokeball.svg" class="w-5 h-5 opacity-80 shrink-0" />
+      <span
+        class="text-white font-mono font-bold text-lg tracking-tight truncate"
         >{{ pokemon.number }} {{ pokemon.name | titlecase }}</span
       >
     </div>
 
     <button
+      (click)="next.emit()"
       class="w-10 h-10 flex items-center justify-center rounded-xl bg-white/10 border border-white/10 text-white/70 hover:bg-white/10 transition-colors cursor-pointer"
     >
       <svg
@@ -62,9 +65,11 @@
   <!-- Image -->
   <div class="relative z-20 h-65 flex items-center justify-center -mt-2 group">
     <img
-      [src]="pokemon.sprites.regular"
+      [ngSrc]="pokemon.sprites.regular"
       [alt]="pokemon.name"
-      class="h-full w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform transition-transform duration-500 group-hover:scale-110 will-change-transform"
+      fill
+      priority
+      class="object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform transition-transform duration-500 group-hover:scale-110 will-change-transform"
     />
   </div>
 

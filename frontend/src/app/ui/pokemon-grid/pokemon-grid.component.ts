@@ -1,11 +1,11 @@
-import { CommonModule } from "@angular/common";
+import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { Component, EventEmitter, Input, Output } from "@angular/core";
 import type { Pokemon } from "../../core/models/pokemon.model";
 
 @Component({
 	selector: "app-pokemon-grid",
 	standalone: true,
-	imports: [CommonModule],
+	imports: [CommonModule, NgOptimizedImage],
 	templateUrl: "./pokemon-grid.component.html",
 })
 export class PokemonGridComponent {

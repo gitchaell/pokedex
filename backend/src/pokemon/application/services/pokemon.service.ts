@@ -9,8 +9,8 @@ export class PokemonService {
 		return this.repository.findById(id);
 	}
 
-	async search(query: string, type?: string, limit?: number) {
-		const items = await this.repository.search(query, type, limit);
+	async search(query: string, type?: string, limit?: number, offset?: number) {
+		const items = await this.repository.search(query, type, limit, offset);
 		return { items };
 	}
 }

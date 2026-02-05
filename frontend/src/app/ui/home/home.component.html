@@ -14,22 +14,15 @@
       <app-pokemon-detail
         *ngIf="store.selectedPokemon()"
         [pokemon]="store.selectedPokemon()!"
+        (prev)="store.selectPrevPokemon()"
+        (next)="store.selectNextPokemon()"
       >
       </app-pokemon-detail>
     </div>
 
     <!-- Grid (Right) -->
     <div class="flex-1 w-full min-w-0">
-      <div
-        class="mb-6 flex items-end justify-between border-b border-white/5 pb-2"
-      >
-        <h2 class="text-3xl font-bold text-white font-heading tracking-tight">
-          Pokedex
-        </h2>
-        <span class="text-sm text-slate-400 font-mono mb-1"
-          >{{ store.gridPokemons().length }} Found</span
-        >
-      </div>
+      <div class="h-6"></div>
 
       <app-pokemon-grid
         [pokemons]="store.gridPokemons()"
@@ -37,8 +30,34 @@
       >
       </app-pokemon-grid>
 
+      <!-- Pagination -->
       <div
-        *ngIf="store.gridPokemons().length === 0 && !store.loading()"
+        class="mt-8 flex justify-center items-center gap-6"
+        *ngIf="store.gridPokemons().length > 0 || store.page() > 1"
+      >
+        <button
+          (click)="store.prevPage()"
+          [disabled]="store.page() === 1"
+          class="px-6 py-2 rounded-xl bg-white/10 border border-white/5 hover:bg-white/20 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-white font-mono text-sm cursor-pointer"
+        >
+          Previous
+        </button>
+        <div
+          class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/70 font-mono font-bold text-sm"
+        >
+          Page {{ store.page() }}
+        </div>
+        <button
+          (click)="store.nextPage()"
+          [disabled]="store.gridPokemons().length < store.searchLimit()"
+          class="px-6 py-2 rounded-xl bg-white/10 border border-white/5 hover:bg-white/20 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-white font-mono text-sm cursor-pointer"
+        >
+          Next
+        </button>
+      </div>
+
+      <div
+        *ngIf="store.gridPokemons().length === 0 && !store.loading() && store.page() === 1"
         class="text-center py-20 text-slate-500 font-mono text-sm"
       >
         No Pokemon found. Try searching for something else.

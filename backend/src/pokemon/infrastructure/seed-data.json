@@ -3,7 +3,10 @@
 		"id": "1",
 		"number": 1,
 		"name": "bulbasaur",
-		"types": ["grass", "poison"],
+		"types": [
+			"grass",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/1.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/1.gif"
@@ -25,30 +28,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 48,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 89,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 117,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 43,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -65,7 +68,10 @@
 		"id": "2",
 		"number": 2,
 		"name": "ivysaur",
-		"types": ["grass", "poison"],
+		"types": [
+			"grass",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/2.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/2.gif"
@@ -87,30 +93,30 @@
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 51,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 110,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "vine-whip",
 				"type": "normal",
-				"damage": 0,
+				"damage": 54,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -127,7 +133,10 @@
 		"id": "3",
 		"number": 3,
 		"name": "venusaur",
-		"types": ["grass", "poison"],
+		"types": [
+			"grass",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/3.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/3.gif"
@@ -148,31 +157,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 116,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 118,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 101,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "vine-whip",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 70,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -189,7 +198,9 @@
 		"id": "4",
 		"number": 4,
 		"name": "charmander",
-		"types": ["fire"],
+		"types": [
+			"fire"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/4.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/4.gif"
@@ -210,31 +221,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 51,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 84,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -251,7 +262,9 @@
 		"id": "5",
 		"number": 5,
 		"name": "charmeleon",
-		"types": ["fire"],
+		"types": [
+			"fire"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/5.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/5.gif"
@@ -272,31 +285,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 95,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 63,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 108,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -313,7 +326,10 @@
 		"id": "6",
 		"number": 6,
 		"name": "charizard",
-		"types": ["fire", "flying"],
+		"types": [
+			"fire",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/6.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/6.gif"
@@ -335,30 +351,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 66,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 100,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 69,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -375,7 +391,9 @@
 		"id": "7",
 		"number": 7,
 		"name": "squirtle",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/7.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/7.gif"
@@ -396,31 +414,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 50,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 103,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "mega-kick",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 42,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -437,7 +455,9 @@
 		"id": "8",
 		"number": 8,
 		"name": "wartortle",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/8.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/8.gif"
@@ -459,30 +479,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 113,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 65,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "mega-kick",
 				"type": "normal",
-				"damage": 0,
+				"damage": 41,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 86,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -499,7 +519,9 @@
 		"id": "9",
 		"number": 9,
 		"name": "blastoise",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/9.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/9.gif"
@@ -520,31 +542,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 60,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 103,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "mega-kick",
 				"type": "normal",
-				"damage": 0,
+				"damage": 95,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -561,7 +583,9 @@
 		"id": "10",
 		"number": 10,
 		"name": "caterpie",
-		"types": ["bug"],
+		"types": [
+			"bug"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/10.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/10.gif"
@@ -582,31 +606,31 @@
 		"moves": [
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 64,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "string-shot",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "snore",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 83,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "bug-bite",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 99,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -623,7 +647,9 @@
 		"id": "11",
 		"number": 11,
 		"name": "metapod",
-		"types": ["bug"],
+		"types": [
+			"bug"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/11.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/11.gif"
@@ -644,31 +670,31 @@
 		"moves": [
 			{
 				"name": "string-shot",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 109,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "harden",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 107,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "iron-defense",
 				"type": "normal",
-				"damage": 0,
+				"damage": 67,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "bug-bite",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 43,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -685,7 +711,10 @@
 		"id": "12",
 		"number": 12,
 		"name": "butterfree",
-		"types": ["bug", "flying"],
+		"types": [
+			"bug",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/12.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/12.gif"
@@ -707,30 +736,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "gust",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 92,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "flying",
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -747,7 +776,10 @@
 		"id": "13",
 		"number": 13,
 		"name": "weedle",
-		"types": ["bug", "poison"],
+		"types": [
+			"bug",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/13.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/13.gif"
@@ -768,31 +800,31 @@
 		"moves": [
 			{
 				"name": "poison-sting",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 56,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "string-shot",
 				"type": "normal",
-				"damage": 0,
+				"damage": 116,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "bug-bite",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 67,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "electroweb",
 				"type": "normal",
-				"damage": 0,
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -809,7 +841,10 @@
 		"id": "14",
 		"number": 14,
 		"name": "kakuna",
-		"types": ["bug", "poison"],
+		"types": [
+			"bug",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/14.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/14.gif"
@@ -831,30 +866,30 @@
 			{
 				"name": "string-shot",
 				"type": "normal",
-				"damage": 0,
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "harden",
 				"type": "normal",
-				"damage": 0,
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "iron-defense",
 				"type": "normal",
-				"damage": 0,
+				"damage": 107,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "bug-bite",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 47,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -871,7 +906,10 @@
 		"id": "15",
 		"number": 15,
 		"name": "beedrill",
-		"types": ["bug", "poison"],
+		"types": [
+			"bug",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/15.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/15.gif"
@@ -892,31 +930,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 85,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 91,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "fury-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -933,7 +971,10 @@
 		"id": "16",
 		"number": 16,
 		"name": "pidgey",
-		"types": ["normal", "flying"],
+		"types": [
+			"normal",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/16.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/16.gif"
@@ -955,30 +996,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 45,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "gust",
 				"type": "normal",
-				"damage": 0,
+				"damage": 69,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "wing-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "whirlwind",
-				"type": "normal",
-				"damage": 0,
+				"type": "flying",
+				"damage": 43,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -995,7 +1036,10 @@
 		"id": "17",
 		"number": 17,
 		"name": "pidgeotto",
-		"types": ["normal", "flying"],
+		"types": [
+			"normal",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/17.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/17.gif"
@@ -1017,30 +1061,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 96,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "gust",
 				"type": "normal",
-				"damage": 0,
+				"damage": 66,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "wing-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 72,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 83,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -1057,7 +1101,10 @@
 		"id": "18",
 		"number": 18,
 		"name": "pidgeot",
-		"types": ["normal", "flying"],
+		"types": [
+			"normal",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/18.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/18.gif"
@@ -1079,30 +1126,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 79,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "gust",
-				"type": "normal",
-				"damage": 0,
+				"type": "flying",
+				"damage": 51,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "wing-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 73,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 62,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -1119,7 +1166,9 @@
 		"id": "19",
 		"number": 19,
 		"name": "rattata",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/19.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/19.gif"
@@ -1141,30 +1190,30 @@
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 104,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "tackle",
 				"type": "normal",
-				"damage": 0,
+				"damage": 60,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "body-slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 85,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -1181,7 +1230,9 @@
 		"id": "20",
 		"number": 20,
 		"name": "raticate",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/20.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/20.gif"
@@ -1203,30 +1254,30 @@
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 111,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 54,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "tackle",
 				"type": "normal",
-				"damage": 0,
+				"damage": 73,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -1243,7 +1294,10 @@
 		"id": "21",
 		"number": 21,
 		"name": "spearow",
-		"types": ["normal", "flying"],
+		"types": [
+			"normal",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/21.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/21.gif"
@@ -1265,30 +1319,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 85,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "wing-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 74,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fly",
 				"type": "normal",
-				"damage": 0,
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -1305,7 +1359,10 @@
 		"id": "22",
 		"number": 22,
 		"name": "fearow",
-		"types": ["normal", "flying"],
+		"types": [
+			"normal",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/22.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/22.gif"
@@ -1327,30 +1384,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 115,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "wing-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 98,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 66,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fly",
 				"type": "normal",
-				"damage": 0,
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -1367,7 +1424,9 @@
 		"id": "23",
 		"number": 23,
 		"name": "ekans",
-		"types": ["poison"],
+		"types": [
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/23.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/23.gif"
@@ -1388,31 +1447,31 @@
 		"moves": [
 			{
 				"name": "bind",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 81,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 48,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "body-slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 40,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -1429,7 +1488,9 @@
 		"id": "24",
 		"number": 24,
 		"name": "arbok",
-		"types": ["poison"],
+		"types": [
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/24.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/24.gif"
@@ -1451,30 +1512,30 @@
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 120,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 41,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 42,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "body-slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -1491,7 +1552,9 @@
 		"id": "25",
 		"number": 25,
 		"name": "pikachu",
-		"types": ["electric"],
+		"types": [
+			"electric"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/25.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/25.gif"
@@ -1513,30 +1576,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 56,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 95,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 93,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -1553,7 +1616,9 @@
 		"id": "26",
 		"number": 26,
 		"name": "raichu",
-		"types": ["electric"],
+		"types": [
+			"electric"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/26.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/26.gif"
@@ -1574,31 +1639,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 113,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "thunder-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 71,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -1615,7 +1680,9 @@
 		"id": "27",
 		"number": 27,
 		"name": "sandshrew",
-		"types": ["ground"],
+		"types": [
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/27.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/27.gif"
@@ -1636,31 +1703,31 @@
 		"moves": [
 			{
 				"name": "scratch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 86,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 76,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 50,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "sand-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -1677,7 +1744,9 @@
 		"id": "28",
 		"number": 28,
 		"name": "sandslash",
-		"types": ["ground"],
+		"types": [
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/28.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/28.gif"
@@ -1698,31 +1767,31 @@
 		"moves": [
 			{
 				"name": "scratch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 57,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 95,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "sand-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 109,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -1739,7 +1808,9 @@
 		"id": "29",
 		"number": 29,
 		"name": "nidoran-f",
-		"types": ["poison"],
+		"types": [
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/29.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/29.gif"
@@ -1761,30 +1832,30 @@
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 64,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 92,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "double-kick",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 52,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -1801,7 +1872,9 @@
 		"id": "30",
 		"number": 30,
 		"name": "nidorina",
-		"types": ["poison"],
+		"types": [
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/30.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/30.gif"
@@ -1822,31 +1895,31 @@
 		"moves": [
 			{
 				"name": "scratch",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 87,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "double-kick",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 83,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 62,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -1863,7 +1936,10 @@
 		"id": "31",
 		"number": 31,
 		"name": "nidoqueen",
-		"types": ["poison", "ground"],
+		"types": [
+			"poison",
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/31.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/31.gif"
@@ -1885,30 +1961,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 117,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "pay-day",
 				"type": "normal",
-				"damage": 0,
+				"damage": 50,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 48,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 87,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -1925,7 +2001,9 @@
 		"id": "32",
 		"number": 32,
 		"name": "nidoran-m",
-		"types": ["poison"],
+		"types": [
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/32.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/32.gif"
@@ -1946,31 +2024,31 @@
 		"moves": [
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 83,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "double-kick",
 				"type": "normal",
-				"damage": 0,
+				"damage": 91,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "horn-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 70,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -1987,7 +2065,9 @@
 		"id": "33",
 		"number": 33,
 		"name": "nidorino",
-		"types": ["poison"],
+		"types": [
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/33.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/33.gif"
@@ -2008,31 +2088,31 @@
 		"moves": [
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "double-kick",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 41,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "horn-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -2049,7 +2129,10 @@
 		"id": "34",
 		"number": 34,
 		"name": "nidoking",
-		"types": ["poison", "ground"],
+		"types": [
+			"poison",
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/34.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/34.gif"
@@ -2070,31 +2153,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 100,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 89,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -2111,7 +2194,9 @@
 		"id": "35",
 		"number": 35,
 		"name": "clefairy",
-		"types": ["fairy"],
+		"types": [
+			"fairy"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/35.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/35.gif"
@@ -2133,30 +2218,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "double-slap",
-				"type": "normal",
-				"damage": 0,
+				"type": "fairy",
+				"damage": 96,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fairy",
+				"damage": 45,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 65,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -2173,7 +2258,9 @@
 		"id": "36",
 		"number": 36,
 		"name": "clefable",
-		"types": ["fairy"],
+		"types": [
+			"fairy"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/36.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/36.gif"
@@ -2195,30 +2282,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 56,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "double-slap",
-				"type": "normal",
-				"damage": 0,
+				"type": "fairy",
+				"damage": 41,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 73,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 63,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -2235,7 +2322,9 @@
 		"id": "37",
 		"number": 37,
 		"name": "vulpix",
-		"types": ["fire"],
+		"types": [
+			"fire"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/37.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/37.gif"
@@ -2257,30 +2346,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 70,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 85,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "body-slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 87,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -2297,7 +2386,9 @@
 		"id": "38",
 		"number": 38,
 		"name": "ninetales",
-		"types": ["fire"],
+		"types": [
+			"fire"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/38.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/38.gif"
@@ -2318,31 +2409,31 @@
 		"moves": [
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 42,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 62,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "body-slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 93,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 67,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -2359,7 +2450,10 @@
 		"id": "39",
 		"number": 39,
 		"name": "jigglypuff",
-		"types": ["normal", "fairy"],
+		"types": [
+			"normal",
+			"fairy"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/39.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/39.gif"
@@ -2381,30 +2475,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 110,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "double-slap",
 				"type": "normal",
-				"damage": 0,
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 45,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 93,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -2421,7 +2515,10 @@
 		"id": "40",
 		"number": 40,
 		"name": "wigglytuff",
-		"types": ["normal", "fairy"],
+		"types": [
+			"normal",
+			"fairy"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/40.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/40.gif"
@@ -2443,30 +2540,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 70,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "double-slap",
-				"type": "normal",
-				"damage": 0,
+				"type": "fairy",
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 96,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -2483,7 +2580,10 @@
 		"id": "41",
 		"number": 41,
 		"name": "zubat",
-		"types": ["poison", "flying"],
+		"types": [
+			"poison",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/41.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/41.gif"
@@ -2505,30 +2605,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "gust",
 				"type": "normal",
-				"damage": 0,
+				"damage": 98,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "wing-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -2545,7 +2645,10 @@
 		"id": "42",
 		"number": 42,
 		"name": "golbat",
-		"types": ["poison", "flying"],
+		"types": [
+			"poison",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/42.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/42.gif"
@@ -2567,30 +2670,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 81,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "gust",
 				"type": "normal",
-				"damage": 0,
+				"damage": 113,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "wing-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "whirlwind",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 108,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -2607,7 +2710,10 @@
 		"id": "43",
 		"number": 43,
 		"name": "oddish",
-		"types": ["grass", "poison"],
+		"types": [
+			"grass",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/43.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/43.gif"
@@ -2628,31 +2734,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 43,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 117,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "take-down",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 117,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -2669,7 +2775,10 @@
 		"id": "44",
 		"number": 44,
 		"name": "gloom",
-		"types": ["grass", "poison"],
+		"types": [
+			"grass",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/44.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/44.gif"
@@ -2691,30 +2800,30 @@
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 58,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "take-down",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 67,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -2731,7 +2840,10 @@
 		"id": "45",
 		"number": 45,
 		"name": "vileplume",
-		"types": ["grass", "poison"],
+		"types": [
+			"grass",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/45.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/45.gif"
@@ -2752,31 +2864,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 83,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "body-slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 57,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -2793,7 +2905,10 @@
 		"id": "46",
 		"number": 46,
 		"name": "paras",
-		"types": ["bug", "grass"],
+		"types": [
+			"bug",
+			"grass"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/46.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/46.gif"
@@ -2815,30 +2930,30 @@
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 58,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 91,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 113,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 86,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -2855,7 +2970,10 @@
 		"id": "47",
 		"number": 47,
 		"name": "parasect",
-		"types": ["bug", "grass"],
+		"types": [
+			"bug",
+			"grass"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/47.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/47.gif"
@@ -2877,30 +2995,30 @@
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 112,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 47,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 45,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -2917,7 +3035,10 @@
 		"id": "48",
 		"number": 48,
 		"name": "venonat",
-		"types": ["bug", "poison"],
+		"types": [
+			"bug",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/48.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/48.gif"
@@ -2938,31 +3059,31 @@
 		"moves": [
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "tackle",
 				"type": "normal",
-				"damage": 0,
+				"damage": 86,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "take-down",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 89,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "double-edge",
 				"type": "normal",
-				"damage": 0,
+				"damage": 58,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -2979,7 +3100,10 @@
 		"id": "49",
 		"number": 49,
 		"name": "venomoth",
-		"types": ["bug", "poison"],
+		"types": [
+			"bug",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/49.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/49.gif"
@@ -3000,31 +3124,31 @@
 		"moves": [
 			{
 				"name": "razor-wind",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 120,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "gust",
 				"type": "normal",
-				"damage": 0,
+				"damage": 90,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 58,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -3041,7 +3165,9 @@
 		"id": "50",
 		"number": 50,
 		"name": "diglett",
-		"types": ["ground"],
+		"types": [
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/50.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/50.gif"
@@ -3063,30 +3189,30 @@
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 108,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 86,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 103,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "sand-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 89,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -3103,7 +3229,9 @@
 		"id": "51",
 		"number": 51,
 		"name": "dugtrio",
-		"types": ["ground"],
+		"types": [
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/51.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/51.gif"
@@ -3124,31 +3252,31 @@
 		"moves": [
 			{
 				"name": "scratch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 52,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 96,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "sand-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -3165,7 +3293,9 @@
 		"id": "52",
 		"number": 52,
 		"name": "meowth",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/52.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/52.gif"
@@ -3187,30 +3317,30 @@
 			{
 				"name": "pay-day",
 				"type": "normal",
-				"damage": 0,
+				"damage": 67,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 71,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 84,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -3227,7 +3357,9 @@
 		"id": "53",
 		"number": 53,
 		"name": "persian",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/53.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/53.gif"
@@ -3249,30 +3381,30 @@
 			{
 				"name": "pay-day",
 				"type": "normal",
-				"damage": 0,
+				"damage": 102,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 100,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 62,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -3289,7 +3421,9 @@
 		"id": "54",
 		"number": 54,
 		"name": "psyduck",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/54.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/54.gif"
@@ -3311,30 +3445,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 110,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 106,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "scratch",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -3351,7 +3485,9 @@
 		"id": "55",
 		"number": 55,
 		"name": "golduck",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/55.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/55.gif"
@@ -3372,31 +3508,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 98,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 116,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 67,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -3413,7 +3549,9 @@
 		"id": "56",
 		"number": 56,
 		"name": "mankey",
-		"types": ["fighting"],
+		"types": [
+			"fighting"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/56.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/56.gif"
@@ -3434,31 +3572,31 @@
 		"moves": [
 			{
 				"name": "karate-chop",
-				"type": "normal",
-				"damage": 0,
+				"type": "fighting",
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 113,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "pay-day",
 				"type": "normal",
-				"damage": 0,
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 112,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -3475,7 +3613,9 @@
 		"id": "57",
 		"number": 57,
 		"name": "primeape",
-		"types": ["fighting"],
+		"types": [
+			"fighting"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/57.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/57.gif"
@@ -3497,30 +3637,30 @@
 			{
 				"name": "karate-chop",
 				"type": "normal",
-				"damage": 0,
+				"damage": 65,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fighting",
+				"damage": 60,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "fighting",
+				"damage": 71,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 92,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -3537,7 +3677,9 @@
 		"id": "58",
 		"number": 58,
 		"name": "growlithe",
-		"types": ["fire"],
+		"types": [
+			"fire"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/58.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/58.gif"
@@ -3558,31 +3700,31 @@
 		"moves": [
 			{
 				"name": "double-kick",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 113,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "body-slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 88,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "take-down",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 103,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -3599,7 +3741,9 @@
 		"id": "59",
 		"number": 59,
 		"name": "arcanine",
-		"types": ["fire"],
+		"types": [
+			"fire"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/59.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/59.gif"
@@ -3621,30 +3765,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 46,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "body-slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 102,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 116,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "double-edge",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 99,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -3661,7 +3805,9 @@
 		"id": "60",
 		"number": 60,
 		"name": "poliwag",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/60.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/60.gif"
@@ -3682,31 +3828,31 @@
 		"moves": [
 			{
 				"name": "pound",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 89,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "double-slap",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 51,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 107,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "body-slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -3723,7 +3869,9 @@
 		"id": "61",
 		"number": 61,
 		"name": "poliwhirl",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/61.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/61.gif"
@@ -3745,30 +3893,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 85,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "double-slap",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 72,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 84,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -3785,7 +3933,10 @@
 		"id": "62",
 		"number": 62,
 		"name": "poliwrath",
-		"types": ["water", "fighting"],
+		"types": [
+			"water",
+			"fighting"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/62.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/62.gif"
@@ -3807,30 +3958,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 96,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "double-slap",
 				"type": "normal",
-				"damage": 0,
+				"damage": 87,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 112,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -3847,7 +3998,9 @@
 		"id": "63",
 		"number": 63,
 		"name": "abra",
-		"types": ["psychic"],
+		"types": [
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/63.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/63.gif"
@@ -3869,30 +4022,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 56,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 110,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "thunder-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 81,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -3909,7 +4062,9 @@
 		"id": "64",
 		"number": 64,
 		"name": "kadabra",
-		"types": ["psychic"],
+		"types": [
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/64.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/64.gif"
@@ -3931,30 +4086,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 117,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 79,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -3971,7 +4126,9 @@
 		"id": "65",
 		"number": 65,
 		"name": "alakazam",
-		"types": ["psychic"],
+		"types": [
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/65.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/65.gif"
@@ -3993,30 +4150,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 87,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "thunder-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 86,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -4033,7 +4190,9 @@
 		"id": "66",
 		"number": 66,
 		"name": "machop",
-		"types": ["fighting"],
+		"types": [
+			"fighting"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/66.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/66.gif"
@@ -4054,31 +4213,31 @@
 		"moves": [
 			{
 				"name": "karate-chop",
-				"type": "normal",
-				"damage": 0,
+				"type": "fighting",
+				"damage": 66,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 48,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 73,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -4095,7 +4254,9 @@
 		"id": "67",
 		"number": 67,
 		"name": "machoke",
-		"types": ["fighting"],
+		"types": [
+			"fighting"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/67.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/67.gif"
@@ -4116,31 +4277,31 @@
 		"moves": [
 			{
 				"name": "karate-chop",
-				"type": "normal",
-				"damage": 0,
+				"type": "fighting",
+				"damage": 71,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 89,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 93,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 108,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -4157,7 +4318,9 @@
 		"id": "68",
 		"number": 68,
 		"name": "machamp",
-		"types": ["fighting"],
+		"types": [
+			"fighting"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/68.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/68.gif"
@@ -4178,31 +4341,31 @@
 		"moves": [
 			{
 				"name": "karate-chop",
-				"type": "normal",
-				"damage": 0,
+				"type": "fighting",
+				"damage": 107,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 116,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 85,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -4219,7 +4382,10 @@
 		"id": "69",
 		"number": 69,
 		"name": "bellsprout",
-		"types": ["grass", "poison"],
+		"types": [
+			"grass",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/69.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/69.gif"
@@ -4240,31 +4406,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 71,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 47,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -4281,7 +4447,10 @@
 		"id": "70",
 		"number": 70,
 		"name": "weepinbell",
-		"types": ["grass", "poison"],
+		"types": [
+			"grass",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/70.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/70.gif"
@@ -4303,30 +4472,30 @@
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 90,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 72,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "bind",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 102,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 87,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -4343,7 +4512,10 @@
 		"id": "71",
 		"number": 71,
 		"name": "victreebel",
-		"types": ["grass", "poison"],
+		"types": [
+			"grass",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/71.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/71.gif"
@@ -4364,31 +4536,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 65,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 82,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 93,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -4405,7 +4577,10 @@
 		"id": "72",
 		"number": 72,
 		"name": "tentacool",
-		"types": ["water", "poison"],
+		"types": [
+			"water",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/72.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/72.gif"
@@ -4426,31 +4601,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 70,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "bind",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 73,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 40,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -4467,7 +4642,10 @@
 		"id": "73",
 		"number": 73,
 		"name": "tentacruel",
-		"types": ["water", "poison"],
+		"types": [
+			"water",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/73.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/73.gif"
@@ -4489,30 +4667,30 @@
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 81,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 116,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 87,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 54,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -4529,7 +4707,10 @@
 		"id": "74",
 		"number": 74,
 		"name": "geodude",
-		"types": ["rock", "ground"],
+		"types": [
+			"rock",
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/74.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/74.gif"
@@ -4551,30 +4732,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 110,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 117,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "thunder-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 98,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "sand-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 117,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -4591,7 +4772,10 @@
 		"id": "75",
 		"number": 75,
 		"name": "graveler",
-		"types": ["rock", "ground"],
+		"types": [
+			"rock",
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/75.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/75.gif"
@@ -4613,30 +4797,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 52,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "thunder-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 106,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "sand-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "rock",
+				"damage": 47,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -4653,7 +4837,10 @@
 		"id": "76",
 		"number": 76,
 		"name": "golem",
-		"types": ["rock", "ground"],
+		"types": [
+			"rock",
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/76.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/76.gif"
@@ -4675,30 +4862,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 99,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 69,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "thunder-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 118,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "mega-kick",
-				"type": "normal",
-				"damage": 0,
+				"type": "rock",
+				"damage": 104,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -4715,7 +4902,9 @@
 		"id": "77",
 		"number": 77,
 		"name": "ponyta",
-		"types": ["fire"],
+		"types": [
+			"fire"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/77.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/77.gif"
@@ -4737,30 +4926,30 @@
 			{
 				"name": "stomp",
 				"type": "normal",
-				"damage": 0,
+				"damage": 98,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "double-kick",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 71,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 77,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "horn-drill",
 				"type": "normal",
-				"damage": 0,
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -4777,7 +4966,9 @@
 		"id": "78",
 		"number": 78,
 		"name": "rapidash",
-		"types": ["fire"],
+		"types": [
+			"fire"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/78.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/78.gif"
@@ -4798,31 +4989,31 @@
 		"moves": [
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 110,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 101,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "stomp",
 				"type": "normal",
-				"damage": 0,
+				"damage": 47,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "double-kick",
 				"type": "normal",
-				"damage": 0,
+				"damage": 84,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -4839,7 +5030,10 @@
 		"id": "79",
 		"number": 79,
 		"name": "slowpoke",
-		"types": ["water", "psychic"],
+		"types": [
+			"water",
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/79.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/79.gif"
@@ -4860,31 +5054,31 @@
 		"moves": [
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "stomp",
 				"type": "normal",
-				"damage": 0,
+				"damage": 63,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 74,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 62,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -4901,7 +5095,10 @@
 		"id": "80",
 		"number": 80,
 		"name": "slowbro",
-		"types": ["water", "psychic"],
+		"types": [
+			"water",
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/80.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/80.gif"
@@ -4923,30 +5120,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 66,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "pay-day",
 				"type": "normal",
-				"damage": 0,
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "stomp",
 				"type": "normal",
-				"damage": 0,
+				"damage": 63,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -4963,7 +5160,10 @@
 		"id": "81",
 		"number": 81,
 		"name": "magnemite",
-		"types": ["electric", "steel"],
+		"types": [
+			"electric",
+			"steel"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/81.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/81.gif"
@@ -4985,30 +5185,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 109,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 72,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "double-edge",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 45,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -5025,7 +5225,10 @@
 		"id": "82",
 		"number": 82,
 		"name": "magneton",
-		"types": ["electric", "steel"],
+		"types": [
+			"electric",
+			"steel"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/82.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/82.gif"
@@ -5047,30 +5250,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 84,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "tackle",
 				"type": "normal",
-				"damage": 0,
+				"damage": 52,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 57,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "double-edge",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 118,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -5087,7 +5290,10 @@
 		"id": "83",
 		"number": 83,
 		"name": "farfetchd",
-		"types": ["normal", "flying"],
+		"types": [
+			"normal",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/83.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/83.gif"
@@ -5109,30 +5315,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 46,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 62,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 107,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "gust",
 				"type": "normal",
-				"damage": 0,
+				"damage": 48,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -5149,7 +5355,10 @@
 		"id": "84",
 		"number": 84,
 		"name": "doduo",
-		"types": ["normal", "flying"],
+		"types": [
+			"normal",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/84.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/84.gif"
@@ -5171,30 +5380,30 @@
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 104,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "wing-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 91,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 100,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fly",
 				"type": "normal",
-				"damage": 0,
+				"damage": 52,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -5211,7 +5420,10 @@
 		"id": "85",
 		"number": 85,
 		"name": "dodrio",
-		"types": ["normal", "flying"],
+		"types": [
+			"normal",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/85.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/85.gif"
@@ -5233,30 +5445,30 @@
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 112,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "wing-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "flying",
+				"damage": 88,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 118,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fly",
 				"type": "normal",
-				"damage": 0,
+				"damage": 100,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -5273,7 +5485,9 @@
 		"id": "86",
 		"number": 86,
 		"name": "seel",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/86.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/86.gif"
@@ -5294,31 +5508,31 @@
 		"moves": [
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 103,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 112,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 101,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "horn-drill",
 				"type": "normal",
-				"damage": 0,
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -5335,7 +5549,10 @@
 		"id": "87",
 		"number": 87,
 		"name": "dewgong",
-		"types": ["water", "ice"],
+		"types": [
+			"water",
+			"ice"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/87.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/87.gif"
@@ -5356,31 +5573,31 @@
 		"moves": [
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "horn-drill",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 73,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "body-slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 79,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -5397,7 +5614,9 @@
 		"id": "88",
 		"number": 88,
 		"name": "grimer",
-		"types": ["poison"],
+		"types": [
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/88.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/88.gif"
@@ -5418,31 +5637,31 @@
 		"moves": [
 			{
 				"name": "pound",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 95,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 60,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 95,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 120,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -5459,7 +5678,9 @@
 		"id": "89",
 		"number": 89,
 		"name": "muk",
-		"types": ["poison"],
+		"types": [
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/89.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/89.gif"
@@ -5481,30 +5702,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 98,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 116,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -5521,7 +5742,9 @@
 		"id": "90",
 		"number": 90,
 		"name": "shellder",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/90.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/90.gif"
@@ -5543,30 +5766,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "tackle",
 				"type": "normal",
-				"damage": 0,
+				"damage": 72,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "double-edge",
 				"type": "normal",
-				"damage": 0,
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -5583,7 +5806,10 @@
 		"id": "91",
 		"number": 91,
 		"name": "cloyster",
-		"types": ["water", "ice"],
+		"types": [
+			"water",
+			"ice"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/91.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/91.gif"
@@ -5605,30 +5831,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 52,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "body-slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 117,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -5645,7 +5871,10 @@
 		"id": "92",
 		"number": 92,
 		"name": "gastly",
-		"types": ["ghost", "poison"],
+		"types": [
+			"ghost",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/92.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/92.gif"
@@ -5666,31 +5895,31 @@
 		"moves": [
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 92,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 47,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 93,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -5707,7 +5936,10 @@
 		"id": "93",
 		"number": 93,
 		"name": "haunter",
-		"types": ["ghost", "poison"],
+		"types": [
+			"ghost",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/93.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/93.gif"
@@ -5728,31 +5960,31 @@
 		"moves": [
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 56,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "thunder-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 40,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 65,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -5769,7 +6001,10 @@
 		"id": "94",
 		"number": 94,
 		"name": "gengar",
-		"types": ["ghost", "poison"],
+		"types": [
+			"ghost",
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/94.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/94.gif"
@@ -5790,31 +6025,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 83,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "thunder-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 42,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -5831,7 +6066,10 @@
 		"id": "95",
 		"number": 95,
 		"name": "onix",
-		"types": ["rock", "ground"],
+		"types": [
+			"rock",
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/95.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/95.gif"
@@ -5853,30 +6091,30 @@
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 112,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "rock",
+				"damage": 66,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -5893,7 +6131,9 @@
 		"id": "96",
 		"number": 96,
 		"name": "drowzee",
-		"types": ["psychic"],
+		"types": [
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/96.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/96.gif"
@@ -5914,31 +6154,31 @@
 		"moves": [
 			{
 				"name": "pound",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 84,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 59,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 82,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 87,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -5955,7 +6195,9 @@
 		"id": "97",
 		"number": 97,
 		"name": "hypno",
-		"types": ["psychic"],
+		"types": [
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/97.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/97.gif"
@@ -5977,30 +6219,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 89,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 77,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 40,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -6017,7 +6259,9 @@
 		"id": "98",
 		"number": 98,
 		"name": "krabby",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/98.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/98.gif"
@@ -6038,31 +6282,31 @@
 		"moves": [
 			{
 				"name": "vice-grip",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 51,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "guillotine",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -6079,7 +6323,9 @@
 		"id": "99",
 		"number": 99,
 		"name": "kingler",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/99.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/99.gif"
@@ -6100,31 +6346,31 @@
 		"moves": [
 			{
 				"name": "vice-grip",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 91,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "guillotine",
 				"type": "normal",
-				"damage": 0,
+				"damage": 93,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 81,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -6141,7 +6387,9 @@
 		"id": "100",
 		"number": 100,
 		"name": "voltorb",
-		"types": ["electric"],
+		"types": [
+			"electric"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/100.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/100.gif"
@@ -6163,30 +6411,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 107,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 91,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "double-edge",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 46,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -6203,7 +6451,9 @@
 		"id": "101",
 		"number": 101,
 		"name": "electrode",
-		"types": ["electric"],
+		"types": [
+			"electric"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/101.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/101.gif"
@@ -6225,30 +6475,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 89,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "take-down",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 88,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "double-edge",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 82,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -6265,7 +6515,10 @@
 		"id": "102",
 		"number": 102,
 		"name": "exeggcute",
-		"types": ["grass", "psychic"],
+		"types": [
+			"grass",
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/102.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/102.gif"
@@ -6286,31 +6539,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 52,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 40,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "take-down",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 59,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "double-edge",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 83,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -6327,7 +6580,10 @@
 		"id": "103",
 		"number": 103,
 		"name": "exeggutor",
-		"types": ["grass", "psychic"],
+		"types": [
+			"grass",
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/103.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/103.gif"
@@ -6348,31 +6604,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 47,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "stomp",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 60,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "body-slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 112,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -6389,7 +6645,9 @@
 		"id": "104",
 		"number": 104,
 		"name": "cubone",
-		"types": ["ground"],
+		"types": [
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/104.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/104.gif"
@@ -6411,30 +6669,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 109,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 64,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 85,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -6451,7 +6709,9 @@
 		"id": "105",
 		"number": 105,
 		"name": "marowak",
-		"types": ["ground"],
+		"types": [
+			"ground"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/105.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/105.gif"
@@ -6472,31 +6732,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 67,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 92,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 77,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -6513,7 +6773,9 @@
 		"id": "106",
 		"number": 106,
 		"name": "hitmonlee",
-		"types": ["fighting"],
+		"types": [
+			"fighting"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/106.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/106.gif"
@@ -6535,30 +6797,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 47,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 56,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "double-kick",
 				"type": "normal",
-				"damage": 0,
+				"damage": 77,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "mega-kick",
 				"type": "normal",
-				"damage": 0,
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -6575,7 +6837,9 @@
 		"id": "107",
 		"number": 107,
 		"name": "hitmonchan",
-		"types": ["fighting"],
+		"types": [
+			"fighting"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/107.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/107.gif"
@@ -6597,30 +6861,30 @@
 			{
 				"name": "comet-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 118,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 67,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 41,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 66,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -6637,7 +6901,9 @@
 		"id": "108",
 		"number": 108,
 		"name": "lickitung",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/108.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/108.gif"
@@ -6659,30 +6925,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 42,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 113,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 50,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "thunder-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 84,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -6699,7 +6965,9 @@
 		"id": "109",
 		"number": 109,
 		"name": "koffing",
-		"types": ["poison"],
+		"types": [
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/109.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/109.gif"
@@ -6720,31 +6988,31 @@
 		"moves": [
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 83,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "tackle",
 				"type": "normal",
-				"damage": 0,
+				"damage": 79,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "body-slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 59,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 50,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -6761,7 +7029,9 @@
 		"id": "110",
 		"number": 110,
 		"name": "weezing",
-		"types": ["poison"],
+		"types": [
+			"poison"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/110.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/110.gif"
@@ -6783,30 +7053,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 46,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "body-slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "poison",
+				"damage": 95,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 64,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -6823,7 +7093,10 @@
 		"id": "111",
 		"number": 111,
 		"name": "rhyhorn",
-		"types": ["ground", "rock"],
+		"types": [
+			"ground",
+			"rock"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/111.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/111.gif"
@@ -6844,31 +7117,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "stomp",
 				"type": "normal",
-				"damage": 0,
+				"damage": 41,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "sand-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 48,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -6885,7 +7158,10 @@
 		"id": "112",
 		"number": 112,
 		"name": "rhydon",
-		"types": ["ground", "rock"],
+		"types": [
+			"ground",
+			"rock"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/112.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/112.gif"
@@ -6906,31 +7182,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ground",
+				"damage": 71,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "rock",
+				"damage": 119,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 48,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 90,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -6947,7 +7223,9 @@
 		"id": "113",
 		"number": 113,
 		"name": "chansey",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/113.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/113.gif"
@@ -6969,30 +7247,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 85,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "double-slap",
 				"type": "normal",
-				"damage": 0,
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 86,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -7009,7 +7287,9 @@
 		"id": "114",
 		"number": 114,
 		"name": "tangela",
-		"types": ["grass"],
+		"types": [
+			"grass"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/114.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/114.gif"
@@ -7031,30 +7311,30 @@
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 40,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "bind",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 118,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "grass",
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -7071,7 +7351,9 @@
 		"id": "115",
 		"number": 115,
 		"name": "kangaskhan",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/115.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/115.gif"
@@ -7093,30 +7375,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "comet-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 85,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 112,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -7133,7 +7415,9 @@
 		"id": "116",
 		"number": 116,
 		"name": "horsea",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/116.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/116.gif"
@@ -7155,30 +7439,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 56,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 42,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "double-edge",
 				"type": "normal",
-				"damage": 0,
+				"damage": 54,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -7195,7 +7479,9 @@
 		"id": "117",
 		"number": 117,
 		"name": "seadra",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/117.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/117.gif"
@@ -7217,30 +7503,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "take-down",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 62,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "double-edge",
 				"type": "normal",
-				"damage": 0,
+				"damage": 75,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "leer",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 72,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -7257,7 +7543,9 @@
 		"id": "118",
 		"number": 118,
 		"name": "goldeen",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/118.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/118.gif"
@@ -7279,30 +7567,30 @@
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 41,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "horn-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 98,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "fury-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 90,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -7319,7 +7607,9 @@
 		"id": "119",
 		"number": 119,
 		"name": "seaking",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/119.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/119.gif"
@@ -7340,31 +7630,31 @@
 		"moves": [
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 83,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 104,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "horn-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 56,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fury-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 82,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -7381,7 +7671,9 @@
 		"id": "120",
 		"number": 120,
 		"name": "staryu",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/120.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/120.gif"
@@ -7402,31 +7694,31 @@
 		"moves": [
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "tackle",
 				"type": "normal",
-				"damage": 0,
+				"damage": 82,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "take-down",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 58,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "double-edge",
 				"type": "normal",
-				"damage": 0,
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -7443,7 +7735,10 @@
 		"id": "121",
 		"number": 121,
 		"name": "starmie",
-		"types": ["water", "psychic"],
+		"types": [
+			"water",
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/121.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/121.gif"
@@ -7464,31 +7759,31 @@
 		"moves": [
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 112,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "tackle",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 95,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "take-down",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 106,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "double-edge",
 				"type": "normal",
-				"damage": 0,
+				"damage": 115,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -7505,7 +7800,10 @@
 		"id": "122",
 		"number": 122,
 		"name": "mr-mime",
-		"types": ["psychic", "fairy"],
+		"types": [
+			"psychic",
+			"fairy"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/122.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/122.gif"
@@ -7527,30 +7825,30 @@
 			{
 				"name": "pound",
 				"type": "normal",
-				"damage": 0,
+				"damage": 61,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "double-slap",
-				"type": "normal",
-				"damage": 0,
+				"type": "fairy",
+				"damage": 77,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 62,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -7567,7 +7865,10 @@
 		"id": "123",
 		"number": 123,
 		"name": "scyther",
-		"types": ["bug", "flying"],
+		"types": [
+			"bug",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/123.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/123.gif"
@@ -7589,30 +7890,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 109,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 115,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "cut",
-				"type": "normal",
-				"damage": 0,
+				"type": "flying",
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "wing-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 99,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -7629,7 +7930,10 @@
 		"id": "124",
 		"number": 124,
 		"name": "jynx",
-		"types": ["ice", "psychic"],
+		"types": [
+			"ice",
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/124.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/124.gif"
@@ -7650,31 +7954,31 @@
 		"moves": [
 			{
 				"name": "pound",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 107,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "double-slap",
 				"type": "normal",
-				"damage": 0,
+				"damage": 57,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 87,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 40,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -7691,7 +7995,9 @@
 		"id": "125",
 		"number": 125,
 		"name": "electabuzz",
-		"types": ["electric"],
+		"types": [
+			"electric"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/125.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/125.gif"
@@ -7713,30 +8019,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 72,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 73,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 111,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -7753,7 +8059,9 @@
 		"id": "126",
 		"number": 126,
 		"name": "magmar",
-		"types": ["fire"],
+		"types": [
+			"fire"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/126.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/126.gif"
@@ -7775,30 +8083,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 80,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 93,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "thunder-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 99,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "mega-kick",
 				"type": "normal",
-				"damage": 0,
+				"damage": 60,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -7815,7 +8123,9 @@
 		"id": "127",
 		"number": 127,
 		"name": "pinsir",
-		"types": ["bug"],
+		"types": [
+			"bug"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/127.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/127.gif"
@@ -7836,31 +8146,31 @@
 		"moves": [
 			{
 				"name": "vice-grip",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 107,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "guillotine",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "swords-dance",
-				"type": "normal",
-				"damage": 0,
+				"type": "bug",
+				"damage": 117,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 46,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -7877,7 +8187,9 @@
 		"id": "128",
 		"number": 128,
 		"name": "tauros",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/128.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/128.gif"
@@ -7899,30 +8211,30 @@
 			{
 				"name": "stomp",
 				"type": "normal",
-				"damage": 0,
+				"damage": 107,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 119,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "horn-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 57,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "horn-drill",
 				"type": "normal",
-				"damage": 0,
+				"damage": 102,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -7939,7 +8251,9 @@
 		"id": "129",
 		"number": 129,
 		"name": "magikarp",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/129.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/129.gif"
@@ -7961,30 +8275,30 @@
 			{
 				"name": "tackle",
 				"type": "normal",
-				"damage": 0,
+				"damage": 86,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "hydro-pump",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 50,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "splash",
 				"type": "normal",
-				"damage": 0,
+				"damage": 111,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "flail",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 101,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -8001,7 +8315,10 @@
 		"id": "130",
 		"number": 130,
 		"name": "gyarados",
-		"types": ["water", "flying"],
+		"types": [
+			"water",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/130.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/130.gif"
@@ -8022,31 +8339,31 @@
 		"moves": [
 			{
 				"name": "bind",
-				"type": "normal",
-				"damage": 0,
+				"type": "flying",
+				"damage": 115,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "tackle",
 				"type": "normal",
-				"damage": 0,
+				"damage": 78,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "body-slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 72,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -8063,7 +8380,10 @@
 		"id": "131",
 		"number": 131,
 		"name": "lapras",
-		"types": ["water", "ice"],
+		"types": [
+			"water",
+			"ice"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/131.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/131.gif"
@@ -8084,31 +8404,31 @@
 		"moves": [
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 74,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "horn-drill",
 				"type": "normal",
-				"damage": 0,
+				"damage": 91,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "body-slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 74,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 66,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -8125,7 +8445,9 @@
 		"id": "132",
 		"number": 132,
 		"name": "ditto",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/132.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/132.gif"
@@ -8147,9 +8469,9 @@
 			{
 				"name": "transform",
 				"type": "normal",
-				"damage": 0,
+				"damage": 55,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -8166,7 +8488,9 @@
 		"id": "133",
 		"number": 133,
 		"name": "eevee",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/133.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/133.gif"
@@ -8188,30 +8512,30 @@
 			{
 				"name": "pay-day",
 				"type": "normal",
-				"damage": 0,
+				"damage": 63,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "double-kick",
 				"type": "normal",
-				"damage": 0,
+				"damage": 103,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "sand-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 76,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 62,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -8228,7 +8552,9 @@
 		"id": "134",
 		"number": 134,
 		"name": "vaporeon",
-		"types": ["water"],
+		"types": [
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/134.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/134.gif"
@@ -8250,30 +8576,30 @@
 			{
 				"name": "pay-day",
 				"type": "normal",
-				"damage": 0,
+				"damage": 100,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "double-kick",
 				"type": "normal",
-				"damage": 0,
+				"damage": 101,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "sand-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 41,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 87,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -8290,7 +8616,9 @@
 		"id": "135",
 		"number": 135,
 		"name": "jolteon",
-		"types": ["electric"],
+		"types": [
+			"electric"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/135.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/135.gif"
@@ -8311,31 +8639,31 @@
 		"moves": [
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 86,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "double-kick",
 				"type": "normal",
-				"damage": 0,
+				"damage": 77,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "sand-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 100,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 111,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -8352,7 +8680,9 @@
 		"id": "136",
 		"number": 136,
 		"name": "flareon",
-		"types": ["fire"],
+		"types": [
+			"fire"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/136.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/136.gif"
@@ -8373,31 +8703,31 @@
 		"moves": [
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 90,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "double-kick",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 102,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "sand-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 101,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 98,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -8414,7 +8744,9 @@
 		"id": "137",
 		"number": 137,
 		"name": "porygon",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/137.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/137.gif"
@@ -8436,30 +8768,30 @@
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 57,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "tackle",
 				"type": "normal",
-				"damage": 0,
+				"damage": 108,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "take-down",
 				"type": "normal",
-				"damage": 0,
+				"damage": 90,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "double-edge",
 				"type": "normal",
-				"damage": 0,
+				"damage": 50,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -8476,7 +8808,10 @@
 		"id": "138",
 		"number": 138,
 		"name": "omanyte",
-		"types": ["rock", "water"],
+		"types": [
+			"rock",
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/138.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/138.gif"
@@ -8498,30 +8833,30 @@
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 46,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "sand-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "rock",
+				"damage": 50,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 97,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -8538,7 +8873,10 @@
 		"id": "139",
 		"number": 139,
 		"name": "omastar",
-		"types": ["rock", "water"],
+		"types": [
+			"rock",
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/139.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/139.gif"
@@ -8560,30 +8898,30 @@
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 91,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "sand-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 95,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "horn-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "rock",
+				"damage": 44,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -8600,7 +8938,10 @@
 		"id": "140",
 		"number": 140,
 		"name": "kabuto",
-		"types": ["rock", "water"],
+		"types": [
+			"rock",
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/140.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/140.gif"
@@ -8622,30 +8963,30 @@
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 65,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "sand-attack",
 				"type": "normal",
-				"damage": 0,
+				"damage": 100,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 68,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "body-slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "water",
+				"damage": 50,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -8662,7 +9003,10 @@
 		"id": "141",
 		"number": 141,
 		"name": "kabutops",
-		"types": ["rock", "water"],
+		"types": [
+			"rock",
+			"water"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/141.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/141.gif"
@@ -8684,30 +9028,30 @@
 			{
 				"name": "scratch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 42,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 110,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "swords-dance",
 				"type": "normal",
-				"damage": 0,
+				"damage": 64,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "cut",
 				"type": "normal",
-				"damage": 0,
+				"damage": 117,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -8724,7 +9068,10 @@
 		"id": "142",
 		"number": 142,
 		"name": "aerodactyl",
-		"types": ["rock", "flying"],
+		"types": [
+			"rock",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/142.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/142.gif"
@@ -8746,30 +9093,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 77,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "wing-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "rock",
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "whirlwind",
-				"type": "normal",
-				"damage": 0,
+				"type": "rock",
+				"damage": 91,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fly",
-				"type": "normal",
-				"damage": 0,
+				"type": "flying",
+				"damage": 48,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -8786,7 +9133,9 @@
 		"id": "143",
 		"number": 143,
 		"name": "snorlax",
-		"types": ["normal"],
+		"types": [
+			"normal"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/143.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/143.gif"
@@ -8808,30 +9157,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 83,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "pay-day",
 				"type": "normal",
-				"damage": 0,
+				"damage": 82,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 120,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 76,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			}
 		],
 		"evolution": {
@@ -8848,7 +9197,10 @@
 		"id": "144",
 		"number": 144,
 		"name": "articuno",
-		"types": ["ice", "flying"],
+		"types": [
+			"ice",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/144.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/144.gif"
@@ -8870,30 +9222,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 120,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "gust",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 105,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 77,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fly",
-				"type": "normal",
-				"damage": 0,
+				"type": "flying",
+				"damage": 99,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -8910,7 +9262,10 @@
 		"id": "145",
 		"number": 145,
 		"name": "zapdos",
-		"types": ["electric", "flying"],
+		"types": [
+			"electric",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/145.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/145.gif"
@@ -8932,30 +9287,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 67,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "whirlwind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 110,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fly",
-				"type": "normal",
-				"damage": 0,
+				"type": "electric",
+				"damage": 91,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 59,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -8972,7 +9327,10 @@
 		"id": "146",
 		"number": 146,
 		"name": "moltres",
-		"types": ["fire", "flying"],
+		"types": [
+			"fire",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/146.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/146.gif"
@@ -8994,30 +9352,30 @@
 			{
 				"name": "razor-wind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 115,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "gust",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 46,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "wing-attack",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 119,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "whirlwind",
-				"type": "normal",
-				"damage": 0,
+				"type": "flying",
+				"damage": 100,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -9034,7 +9392,9 @@
 		"id": "147",
 		"number": 147,
 		"name": "dratini",
-		"types": ["dragon"],
+		"types": [
+			"dragon"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/147.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/147.gif"
@@ -9055,31 +9415,31 @@
 		"moves": [
 			{
 				"name": "bind",
-				"type": "normal",
-				"damage": 0,
+				"type": "dragon",
+				"damage": 98,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "slam",
 				"type": "normal",
-				"damage": 0,
+				"damage": 49,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "headbutt",
 				"type": "normal",
-				"damage": 0,
+				"damage": 109,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "body-slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "dragon",
+				"damage": 73,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {
@@ -9096,7 +9456,9 @@
 		"id": "148",
 		"number": 148,
 		"name": "dragonair",
-		"types": ["dragon"],
+		"types": [
+			"dragon"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/148.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/148.gif"
@@ -9118,30 +9480,30 @@
 			{
 				"name": "bind",
 				"type": "normal",
-				"damage": 0,
+				"damage": 104,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			},
 			{
 				"name": "slam",
-				"type": "normal",
-				"damage": 0,
+				"type": "dragon",
+				"damage": 90,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "headbutt",
-				"type": "normal",
-				"damage": 0,
+				"type": "dragon",
+				"damage": 114,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "horn-drill",
 				"type": "normal",
-				"damage": 0,
+				"damage": 64,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 4
 			}
 		],
 		"evolution": {
@@ -9158,7 +9520,10 @@
 		"id": "149",
 		"number": 149,
 		"name": "dragonite",
-		"types": ["dragon", "flying"],
+		"types": [
+			"dragon",
+			"flying"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/149.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/149.gif"
@@ -9179,31 +9544,31 @@
 		"moves": [
 			{
 				"name": "mega-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "dragon",
+				"damage": 60,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 3
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 72,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 96,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "thunder-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "flying",
+				"damage": 40,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			}
 		],
 		"evolution": {
@@ -9220,7 +9585,9 @@
 		"id": "150",
 		"number": 150,
 		"name": "mewtwo",
-		"types": ["psychic"],
+		"types": [
+			"psychic"
+		],
 		"sprites": {
 			"regular": "https://shinyhunters.com/images/regular/150.gif",
 			"shiny": "https://shinyhunters.com/images/shiny/150.gif"
@@ -9242,30 +9609,30 @@
 			{
 				"name": "mega-punch",
 				"type": "normal",
-				"damage": 0,
+				"damage": 94,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "pay-day",
-				"type": "normal",
-				"damage": 0,
+				"type": "psychic",
+				"damage": 46,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			},
 			{
 				"name": "fire-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "fire",
+				"damage": 112,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 5
 			},
 			{
 				"name": "ice-punch",
-				"type": "normal",
-				"damage": 0,
+				"type": "ice",
+				"damage": 40,
 				"power": 0,
-				"powerSegments": 0
+				"powerSegments": 2
 			}
 		],
 		"evolution": {

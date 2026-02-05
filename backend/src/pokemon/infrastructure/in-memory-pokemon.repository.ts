@@ -33,6 +33,7 @@ export class InMemoryPokemonRepository {
 		query: string,
 		type?: string,
 		limit: number = 12,
+		offset: number = 0,
 	): Promise<Pokemon[]> {
 		let result = this.pokemons;
 
@@ -51,6 +52,6 @@ export class InMemoryPokemonRepository {
 			);
 		}
 
-		return result.slice(0, limit);
+		return result.slice(offset, offset + limit);
 	}
 }

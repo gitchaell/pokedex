@@ -35,9 +35,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     // Initial Load: List of first 20 and Select Pokemon #1
-    this.store.search('');
-    if (!this.route.snapshot.params['id']) {
-      this.store.loadPokemon('1');
+    if (this.store.gridPokemons().length === 0) {
+      this.store.search("");
+    }
+    if (!this.route.snapshot.params["id"] && !this.store.selectedPokemon()) {
+      this.store.loadPokemon("1");
     }
   }
 

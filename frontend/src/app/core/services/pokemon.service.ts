@@ -39,8 +39,8 @@ const GET_POKEMON_QUERY = gql`
 `;
 
 const SEARCH_POKEMON_QUERY = gql`
-  query Search($query: String, $type: String, $limit: Int) {
-    searchPokemon(query: $query, type: $type, limit: $limit) {
+  query Search($query: String, $type: String, $limit: Int, $offset: Int) {
+    searchPokemon(query: $query, type: $type, limit: $limit, offset: $offset) {
       pokemons {
         id
         number
@@ -73,11 +73,12 @@ export class PokemonService {
 		query: string,
 		type?: string,
 		limit: number = 12,
+		offset: number = 0,
 	): Observable<Pokemon[]> {
 		return this.apollo
 			.watchQuery<{ searchPokemon: { pokemons: Pokemon[] } }>({
 				query: SEARCH_POKEMON_QUERY,
-				variables: { query, type, limit },
+				variables: { query, type, limit, offset },
 				fetchPolicy: "cache-and-network",
 			})
 			.valueChanges.pipe(

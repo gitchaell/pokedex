@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, effect, inject, type OnInit } from "@angular/core";
+import { Component, inject, type OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import type { Pokemon } from "../../core/models/pokemon.model";
 import { PokemonStore } from "../../core/store/pokemon.store";
@@ -23,22 +23,17 @@ export class HomeComponent implements OnInit {
 	route = inject(ActivatedRoute);
 	router = inject(Router);
 
-	constructor() {
-		// Auto-load based on route if present, otherwise default to 1
-		effect(() => {
-			const params = this.route.snapshot.params;
-			if (params["id"]) {
-				this.store.loadPokemon(params["id"]);
+	ngOnInit() {
+		// Subscribe to route parameters to sync Grid and Detail views
+		this.route.paramMap.subscribe((params) => {
+			const id = params.get("id");
+			if (id) {
+				this.store.syncWithId(id);
+			} else {
+				// Default to ID 1 (Bulbasaur) if no ID provided
+				this.store.syncWithId("1");
 			}
 		});
-	}
-
-	ngOnInit() {
-		// Initial Load: List of first 20 and Select Pokemon #1
-		this.store.search("");
-		if (!this.route.snapshot.params["id"]) {
-			this.store.loadPokemon("1");
-		}
 	}
 
 	onSelect(pokemon: Pokemon) {

@@ -54,11 +54,17 @@ export const PokemonStore = signalStore(
 						searchQuery: params.query,
 						searchType: params.type,
 						searchLimit: params.limit,
+						page: params.page,
 						loading: true,
 					}),
 				),
 				switchMap((params) =>
-					service.searchPokemons(params.query, params.type, params.limit),
+					service.searchPokemons(
+						params.query,
+						params.type,
+						params.limit,
+						(params.page - 1) * params.limit,
+					),
 				),
 			)
 			.subscribe({

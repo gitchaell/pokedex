@@ -78,6 +78,24 @@ export const PokemonStore = signalStore(
 			});
 
 		return {
+			syncWithId(id: string) {
+				const numericId = parseInt(id, 10);
+				if (isNaN(numericId) || numericId < 1) return;
+
+				const limit = store.searchLimit();
+				const page = Math.ceil(numericId / limit);
+
+				// Reset to Pokedex view (empty query/type) and jump to page
+				searchSubject.next({
+					query: "",
+					type: "",
+					limit: limit,
+					page: page,
+				});
+
+				this.loadPokemon(id);
+			},
+
 			loadPokemon(id: string) {
 				patchState(store, { loading: true });
 				service.getPokemon(id).subscribe({
